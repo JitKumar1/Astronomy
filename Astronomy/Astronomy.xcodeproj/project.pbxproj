@@ -1,0 +1,1659 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F2570A02B481DE1000CD8B6 /* PlanetaryListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F25709F2B481DE1000CD8B6 /* PlanetaryListRequest.swift */; };
+		0F2570A12B481DE1000CD8B6 /* PlanetaryListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F25709F2B481DE1000CD8B6 /* PlanetaryListRequest.swift */; };
+		0F2570A82B482616000CD8B6 /* MockPlanetaryListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2570A72B482616000CD8B6 /* MockPlanetaryListService.swift */; };
+		0F2570A92B482616000CD8B6 /* MockPlanetaryListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2570A72B482616000CD8B6 /* MockPlanetaryListService.swift */; };
+		0F2570B02B482ACC000CD8B6 /* PlanetaryListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2570AF2B482ACC000CD8B6 /* PlanetaryListRepository.swift */; };
+		0F2570B12B482ACC000CD8B6 /* PlanetaryListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2570AF2B482ACC000CD8B6 /* PlanetaryListRepository.swift */; };
+		0F2570B32B482B8F000CD8B6 /* NetworkFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2570B22B482B8F000CD8B6 /* NetworkFactory.swift */; };
+		0F2570B62B482E1F000CD8B6 /* PlanetaryListRepositoryFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2570B52B482E1F000CD8B6 /* PlanetaryListRepositoryFactory.swift */; };
+		0F2570B72B482E1F000CD8B6 /* PlanetaryListRepositoryFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2570B52B482E1F000CD8B6 /* PlanetaryListRepositoryFactory.swift */; };
+		0F2570BC2B4834DC000CD8B6 /* PlanetaryListUseCaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2570BB2B4834DC000CD8B6 /* PlanetaryListUseCaseFactory.swift */; };
+		0F2570BD2B4834DC000CD8B6 /* PlanetaryListUseCaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2570BB2B4834DC000CD8B6 /* PlanetaryListUseCaseFactory.swift */; };
+		0F2570C32B48362F000CD8B6 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2570C22B48362F000CD8B6 /* Navigator.swift */; };
+		0F2570C42B48362F000CD8B6 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2570C22B48362F000CD8B6 /* Navigator.swift */; };
+		0F2570C62B483697000CD8B6 /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2570C52B483697000CD8B6 /* Navigation.swift */; };
+		0F2570C72B483697000CD8B6 /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2570C52B483697000CD8B6 /* Navigation.swift */; };
+		0F2570CE2B483925000CD8B6 /* Planetaries.json in Resources */ = {isa = PBXBuildFile; fileRef = 0F2570CD2B483925000CD8B6 /* Planetaries.json */; };
+		0F2570CF2B483925000CD8B6 /* Planetaries.json in Resources */ = {isa = PBXBuildFile; fileRef = 0F2570CD2B483925000CD8B6 /* Planetaries.json */; };
+		0F2570D12B48398C000CD8B6 /* PlanetaryDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2570D02B48398C000CD8B6 /* PlanetaryDetailViewModel.swift */; };
+		0F2570D22B48398C000CD8B6 /* PlanetaryDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2570D02B48398C000CD8B6 /* PlanetaryDetailViewModel.swift */; };
+		0F2570D42B483A05000CD8B6 /* PlanetaryDetailUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2570D32B483A05000CD8B6 /* PlanetaryDetailUseCase.swift */; };
+		0F2570D52B483A05000CD8B6 /* PlanetaryDetailUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2570D32B483A05000CD8B6 /* PlanetaryDetailUseCase.swift */; };
+		0F2570D72B484FA4000CD8B6 /* PlanetaryMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2570D62B484FA4000CD8B6 /* PlanetaryMapper.swift */; };
+		0F2570D82B484FA4000CD8B6 /* PlanetaryMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2570D62B484FA4000CD8B6 /* PlanetaryMapper.swift */; };
+		0F2570DA2B485C81000CD8B6 /* PlanetaryDetailUseCaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2570D92B485C81000CD8B6 /* PlanetaryDetailUseCaseFactory.swift */; };
+		0F2570DB2B485C81000CD8B6 /* PlanetaryDetailUseCaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2570D92B485C81000CD8B6 /* PlanetaryDetailUseCaseFactory.swift */; };
+		0F2570DD2B485E2F000CD8B6 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2570DC2B485E2F000CD8B6 /* DataModel.swift */; };
+		0F2570DE2B485E2F000CD8B6 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2570DC2B485E2F000CD8B6 /* DataModel.swift */; };
+		0F2570E02B485ED0000CD8B6 /* DomainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2570DF2B485ED0000CD8B6 /* DomainModel.swift */; };
+		0F2570E12B485ED0000CD8B6 /* DomainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2570DF2B485ED0000CD8B6 /* DomainModel.swift */; };
+		0F2570E32B48675D000CD8B6 /* PlanetaryDetailInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2570E22B48675D000CD8B6 /* PlanetaryDetailInterface.swift */; };
+		0F2570E42B48675D000CD8B6 /* PlanetaryDetailInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2570E22B48675D000CD8B6 /* PlanetaryDetailInterface.swift */; };
+		0F2570E62B486E7D000CD8B6 /* NavigationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2570E52B486E7D000CD8B6 /* NavigationUITests.swift */; };
+		0F2570E82B486EBD000CD8B6 /* PlanetaryListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2570E72B486EBD000CD8B6 /* PlanetaryListUITests.swift */; };
+		0F2570EA2B486F1D000CD8B6 /* PlanetaryDetailUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2570E92B486F1D000CD8B6 /* PlanetaryDetailUITests.swift */; };
+		0F2570F02B48724A000CD8B6 /* PlanetaryListInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE8ABAD2B4802C400399CAB /* PlanetaryListInterface.swift */; };
+		0F2570FC2B488061000CD8B6 /* NetworkManagerInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE8AC042B4815B500399CAB /* NetworkManagerInterface.swift */; };
+		0F2571032B488918000CD8B6 /* MockPlanetaryDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2571012B488918000CD8B6 /* MockPlanetaryDataModel.swift */; };
+		0F2571072B488A14000CD8B6 /* PlanetaryDataModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2571062B488A14000CD8B6 /* PlanetaryDataModelTests.swift */; };
+		0F25710A2B488A79000CD8B6 /* MockDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2571082B488A79000CD8B6 /* MockDataModel.swift */; };
+		0F25710D2B488BC3000CD8B6 /* MockPlanetaryDomainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F25710C2B488BC3000CD8B6 /* MockPlanetaryDomainModel.swift */; };
+		0F25710E2B488BC3000CD8B6 /* MockPlanetaryDomainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F25710C2B488BC3000CD8B6 /* MockPlanetaryDomainModel.swift */; };
+		0F2571102B488CE7000CD8B6 /* PlanetaryDomainModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F25710F2B488CE7000CD8B6 /* PlanetaryDomainModelTests.swift */; };
+		0F2571112B488F6C000CD8B6 /* PlanetaryListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE8AC072B48181900399CAB /* PlanetaryListService.swift */; };
+		0F2571122B488F83000CD8B6 /* NetworkFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2570B22B482B8F000CD8B6 /* NetworkFactory.swift */; };
+		0F2571132B488F8C000CD8B6 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE8ABEC2B480C0100399CAB /* NetworkManager.swift */; };
+		0F2571152B48930F000CD8B6 /* MockURLErrorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2571142B48930F000CD8B6 /* MockURLErrorData.swift */; };
+		0F2571172B489327000CD8B6 /* URLErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2571162B489327000CD8B6 /* URLErrorTests.swift */; };
+		0F2571202B4893E6000CD8B6 /* EndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F25711F2B4893E6000CD8B6 /* EndpointTests.swift */; };
+		0F2571222B489415000CD8B6 /* HTTPMIMETypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2571212B489415000CD8B6 /* HTTPMIMETypeTests.swift */; };
+		0F2571242B48943A000CD8B6 /* HTTPMethodMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2571232B48943A000CD8B6 /* HTTPMethodMock.swift */; };
+		0F2571252B489520000CD8B6 /* MockPlanetaryDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2571012B488918000CD8B6 /* MockPlanetaryDataModel.swift */; };
+		0F2571272B489546000CD8B6 /* HTTPMethodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2571262B489546000CD8B6 /* HTTPMethodTests.swift */; };
+		0F2571292B4895AD000CD8B6 /* HTTPHeadersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2571282B4895AD000CD8B6 /* HTTPHeadersTests.swift */; };
+		0F25712B2B4895BB000CD8B6 /* HTTPHeadersMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F25712A2B4895BB000CD8B6 /* HTTPHeadersMock.swift */; };
+		0F25712E2B48960F000CD8B6 /* DateFormatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F25712D2B48960F000CD8B6 /* DateFormatTests.swift */; };
+		0F2571312B489642000CD8B6 /* ConstantsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2571302B489642000CD8B6 /* ConstantsTests.swift */; };
+		0F2571342B489802000CD8B6 /* PlanetaryListUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2571332B489802000CD8B6 /* PlanetaryListUseCaseTests.swift */; };
+		0F2571392B489F6A000CD8B6 /* PlanetaryListServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2571382B489F6A000CD8B6 /* PlanetaryListServiceTests.swift */; };
+		0F25713C2B489FB5000CD8B6 /* PlanetaryListRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F25713B2B489FB5000CD8B6 /* PlanetaryListRepositoryTests.swift */; };
+		0F25713F2B48A0C6000CD8B6 /* NavigatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F25713E2B48A0C6000CD8B6 /* NavigatorTests.swift */; };
+		0F2571412B48A185000CD8B6 /* NavigationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2571402B48A185000CD8B6 /* NavigationTests.swift */; };
+		0F2571452B48A395000CD8B6 /* PlanetaryDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2571442B48A395000CD8B6 /* PlanetaryDetailViewModelTests.swift */; };
+		0F2571492B48A5B7000CD8B6 /* PlanetaryListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2571482B48A5B7000CD8B6 /* PlanetaryListViewModelTests.swift */; };
+		0FE8AB4A2B47ECA300399CAB /* AstronomyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE8AB492B47ECA300399CAB /* AstronomyApp.swift */; };
+		0FE8AB4C2B47ECA300399CAB /* NavigationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE8AB4B2B47ECA300399CAB /* NavigationScreen.swift */; };
+		0FE8AB4E2B47ECA500399CAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FE8AB4D2B47ECA500399CAB /* Assets.xcassets */; };
+		0FE8AB512B47ECA500399CAB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FE8AB502B47ECA500399CAB /* Preview Assets.xcassets */; };
+		0FE8AB5B2B47ECA500399CAB /* AstronomyTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE8AB5A2B47ECA500399CAB /* AstronomyTestCase.swift */; };
+		0FE8AB652B47ECA500399CAB /* AstronomyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE8AB642B47ECA500399CAB /* AstronomyUITests.swift */; };
+		0FE8AB672B47ECA500399CAB /* AstronomyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE8AB662B47ECA500399CAB /* AstronomyUITestsLaunchTests.swift */; };
+		0FE8AB832B47F29D00399CAB /* SwiftUIWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE8AB822B47F29D00399CAB /* SwiftUIWebView.swift */; };
+		0FE8AB852B47F2C500399CAB /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE8AB842B47F2C500399CAB /* PlayerView.swift */; };
+		0FE8AB892B47F3DC00399CAB /* DateFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE8AB882B47F3DC00399CAB /* DateFormat.swift */; };
+		0FE8AB8A2B47F3DC00399CAB /* DateFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE8AB882B47F3DC00399CAB /* DateFormat.swift */; };
+		0FE8AB8D2B47F45000399CAB /* Contants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE8AB8C2B47F45000399CAB /* Contants.swift */; };
+		0FE8AB8E2B47F45000399CAB /* Contants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE8AB8C2B47F45000399CAB /* Contants.swift */; };
+		0FE8AB922B47F4EF00399CAB /* UITestingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE8AB912B47F4EF00399CAB /* UITestingHelper.swift */; };
+		0FE8AB932B47F4EF00399CAB /* UITestingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE8AB912B47F4EF00399CAB /* UITestingHelper.swift */; };
+		0FE8AB9E2B47FCE100399CAB /* PlanetaryListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE8AB9D2B47FCE100399CAB /* PlanetaryListScreen.swift */; };
+		0FE8ABA02B47FD2200399CAB /* PlanetaryItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE8AB9F2B47FD2200399CAB /* PlanetaryItemView.swift */; };
+		0FE8ABA32B47FD8100399CAB /* PlanetaryDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE8ABA22B47FD8100399CAB /* PlanetaryDetailScreen.swift */; };
+		0FE8ABA62B47FEEE00399CAB /* PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = 0FE8ABA52B47FEEE00399CAB /* PromiseKit */; };
+		0FE8ABA92B47FF0200399CAB /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 0FE8ABA82B47FF0200399CAB /* SDWebImageSwiftUI */; };
+		0FE8ABAE2B4802C400399CAB /* PlanetaryListInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE8ABAD2B4802C400399CAB /* PlanetaryListInterface.swift */; };
+		0FE8ABB02B48043600399CAB /* PlanetaryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE8ABAF2B48043600399CAB /* PlanetaryListViewModel.swift */; };
+		0FE8ABB12B48043600399CAB /* PlanetaryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE8ABAF2B48043600399CAB /* PlanetaryListViewModel.swift */; };
+		0FE8ABB42B48046E00399CAB /* PlanetaryListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE8ABB32B48046E00399CAB /* PlanetaryListUseCase.swift */; };
+		0FE8ABB52B48046E00399CAB /* PlanetaryListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE8ABB32B48046E00399CAB /* PlanetaryListUseCase.swift */; };
+		0FE8ABBD2B4806CA00399CAB /* APIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE8ABBC2B4806CA00399CAB /* APIEndpoint.swift */; };
+		0FE8ABBE2B4806CA00399CAB /* APIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE8ABBC2B4806CA00399CAB /* APIEndpoint.swift */; };
+		0FE8ABC12B4806E700399CAB /* APIQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE8ABC02B4806E700399CAB /* APIQuery.swift */; };
+		0FE8ABC22B4806E700399CAB /* APIQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE8ABC02B4806E700399CAB /* APIQuery.swift */; };
+		0FE8ABC52B4806F800399CAB /* APIQueryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE8ABC42B4806F800399CAB /* APIQueryItem.swift */; };
+		0FE8ABC62B4806F800399CAB /* APIQueryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE8ABC42B4806F800399CAB /* APIQueryItem.swift */; };
+		0FE8ABCA2B4807D000399CAB /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE8ABC92B4807D000399CAB /* ViewExtension.swift */; };
+		0FE8ABCD2B48081B00399CAB /* URLErrorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE8ABCC2B48081B00399CAB /* URLErrorExtension.swift */; };
+		0FE8ABCE2B48081B00399CAB /* URLErrorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE8ABCC2B48081B00399CAB /* URLErrorExtension.swift */; };
+		0FE8ABD02B48083900399CAB /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE8ABCF2B48083900399CAB /* BundleExtension.swift */; };
+		0FE8ABD12B48083900399CAB /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE8ABCF2B48083900399CAB /* BundleExtension.swift */; };
+		0FE8ABD42B4808D700399CAB /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE8ABD32B4808D700399CAB /* JSON.swift */; };
+		0FE8ABD52B4808D700399CAB /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE8ABD32B4808D700399CAB /* JSON.swift */; };
+		0FE8ABD72B48094300399CAB /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE8ABD62B48094300399CAB /* Endpoint.swift */; };
+		0FE8ABD82B48094300399CAB /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE8ABD62B48094300399CAB /* Endpoint.swift */; };
+		0FE8ABDA2B4809E400399CAB /* Endpoints.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0FE8ABD92B4809E400399CAB /* Endpoints.plist */; };
+		0FE8ABDB2B4809E400399CAB /* Endpoints.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0FE8ABD92B4809E400399CAB /* Endpoints.plist */; };
+		0FE8ABDD2B480A2C00399CAB /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE8ABDC2B480A2C00399CAB /* APIRequest.swift */; };
+		0FE8ABDE2B480A2C00399CAB /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE8ABDC2B480A2C00399CAB /* APIRequest.swift */; };
+		0FE8ABE12B480A4300399CAB /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE8ABE02B480A4300399CAB /* HTTPMethod.swift */; };
+		0FE8ABE22B480A4300399CAB /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE8ABE02B480A4300399CAB /* HTTPMethod.swift */; };
+		0FE8ABE52B480A7200399CAB /* HTTPMIMEType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE8ABE42B480A7200399CAB /* HTTPMIMEType.swift */; };
+		0FE8ABE62B480A7200399CAB /* HTTPMIMEType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE8ABE42B480A7200399CAB /* HTTPMIMEType.swift */; };
+		0FE8ABE92B480AAE00399CAB /* HTTPHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE8ABE82B480AAE00399CAB /* HTTPHeaders.swift */; };
+		0FE8ABEA2B480AAE00399CAB /* HTTPHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE8ABE82B480AAE00399CAB /* HTTPHeaders.swift */; };
+		0FE8ABED2B480C0100399CAB /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE8ABEC2B480C0100399CAB /* NetworkManager.swift */; };
+		0FE8ABF02B480E8800399CAB /* Mappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE8ABEF2B480E8800399CAB /* Mappable.swift */; };
+		0FE8ABF12B480E8800399CAB /* Mappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE8ABEF2B480E8800399CAB /* Mappable.swift */; };
+		0FE8ABF92B48119600399CAB /* PlanetaryDomainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE8ABF82B48119600399CAB /* PlanetaryDomainModel.swift */; };
+		0FE8ABFA2B48119600399CAB /* PlanetaryDomainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE8ABF82B48119600399CAB /* PlanetaryDomainModel.swift */; };
+		0FE8ABFC2B4811EF00399CAB /* PlanetaryDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE8ABFB2B4811EF00399CAB /* PlanetaryDataModel.swift */; };
+		0FE8ABFD2B4811EF00399CAB /* PlanetaryDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE8ABFB2B4811EF00399CAB /* PlanetaryDataModel.swift */; };
+		0FE8AC022B4814A800399CAB /* PlanetaryListServiceInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE8AC012B4814A800399CAB /* PlanetaryListServiceInterface.swift */; };
+		0FE8AC032B4814A800399CAB /* PlanetaryListServiceInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE8AC012B4814A800399CAB /* PlanetaryListServiceInterface.swift */; };
+		0FE8AC052B4815B500399CAB /* NetworkManagerInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE8AC042B4815B500399CAB /* NetworkManagerInterface.swift */; };
+		0FE8AC082B48181900399CAB /* PlanetaryListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE8AC072B48181900399CAB /* PlanetaryListService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0FE8AB572B47ECA500399CAB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0FE8AB3E2B47ECA300399CAB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0FE8AB452B47ECA300399CAB;
+			remoteInfo = Astronomy;
+		};
+		0FE8AB612B47ECA500399CAB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0FE8AB3E2B47ECA300399CAB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0FE8AB452B47ECA300399CAB;
+			remoteInfo = Astronomy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0F25709F2B481DE1000CD8B6 /* PlanetaryListRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetaryListRequest.swift; sourceTree = "<group>"; };
+		0F2570A72B482616000CD8B6 /* MockPlanetaryListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPlanetaryListService.swift; sourceTree = "<group>"; };
+		0F2570AF2B482ACC000CD8B6 /* PlanetaryListRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetaryListRepository.swift; sourceTree = "<group>"; };
+		0F2570B22B482B8F000CD8B6 /* NetworkFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkFactory.swift; sourceTree = "<group>"; };
+		0F2570B52B482E1F000CD8B6 /* PlanetaryListRepositoryFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetaryListRepositoryFactory.swift; sourceTree = "<group>"; };
+		0F2570BB2B4834DC000CD8B6 /* PlanetaryListUseCaseFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetaryListUseCaseFactory.swift; sourceTree = "<group>"; };
+		0F2570C22B48362F000CD8B6 /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
+		0F2570C52B483697000CD8B6 /* Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
+		0F2570CD2B483925000CD8B6 /* Planetaries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Planetaries.json; sourceTree = "<group>"; };
+		0F2570D02B48398C000CD8B6 /* PlanetaryDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetaryDetailViewModel.swift; sourceTree = "<group>"; };
+		0F2570D32B483A05000CD8B6 /* PlanetaryDetailUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetaryDetailUseCase.swift; sourceTree = "<group>"; };
+		0F2570D62B484FA4000CD8B6 /* PlanetaryMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetaryMapper.swift; sourceTree = "<group>"; };
+		0F2570D92B485C81000CD8B6 /* PlanetaryDetailUseCaseFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetaryDetailUseCaseFactory.swift; sourceTree = "<group>"; };
+		0F2570DC2B485E2F000CD8B6 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		0F2570DF2B485ED0000CD8B6 /* DomainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainModel.swift; sourceTree = "<group>"; };
+		0F2570E22B48675D000CD8B6 /* PlanetaryDetailInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetaryDetailInterface.swift; sourceTree = "<group>"; };
+		0F2570E52B486E7D000CD8B6 /* NavigationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationUITests.swift; sourceTree = "<group>"; };
+		0F2570E72B486EBD000CD8B6 /* PlanetaryListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetaryListUITests.swift; sourceTree = "<group>"; };
+		0F2570E92B486F1D000CD8B6 /* PlanetaryDetailUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetaryDetailUITests.swift; sourceTree = "<group>"; };
+		0F2571012B488918000CD8B6 /* MockPlanetaryDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPlanetaryDataModel.swift; sourceTree = "<group>"; };
+		0F2571062B488A14000CD8B6 /* PlanetaryDataModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetaryDataModelTests.swift; sourceTree = "<group>"; };
+		0F2571082B488A79000CD8B6 /* MockDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDataModel.swift; sourceTree = "<group>"; };
+		0F25710C2B488BC3000CD8B6 /* MockPlanetaryDomainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPlanetaryDomainModel.swift; sourceTree = "<group>"; };
+		0F25710F2B488CE7000CD8B6 /* PlanetaryDomainModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetaryDomainModelTests.swift; sourceTree = "<group>"; };
+		0F2571142B48930F000CD8B6 /* MockURLErrorData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLErrorData.swift; sourceTree = "<group>"; };
+		0F2571162B489327000CD8B6 /* URLErrorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLErrorTests.swift; sourceTree = "<group>"; };
+		0F25711F2B4893E6000CD8B6 /* EndpointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointTests.swift; sourceTree = "<group>"; };
+		0F2571212B489415000CD8B6 /* HTTPMIMETypeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMIMETypeTests.swift; sourceTree = "<group>"; };
+		0F2571232B48943A000CD8B6 /* HTTPMethodMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethodMock.swift; sourceTree = "<group>"; };
+		0F2571262B489546000CD8B6 /* HTTPMethodTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethodTests.swift; sourceTree = "<group>"; };
+		0F2571282B4895AD000CD8B6 /* HTTPHeadersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPHeadersTests.swift; sourceTree = "<group>"; };
+		0F25712A2B4895BB000CD8B6 /* HTTPHeadersMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPHeadersMock.swift; sourceTree = "<group>"; };
+		0F25712D2B48960F000CD8B6 /* DateFormatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatTests.swift; sourceTree = "<group>"; };
+		0F2571302B489642000CD8B6 /* ConstantsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsTests.swift; sourceTree = "<group>"; };
+		0F2571332B489802000CD8B6 /* PlanetaryListUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetaryListUseCaseTests.swift; sourceTree = "<group>"; };
+		0F2571382B489F6A000CD8B6 /* PlanetaryListServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetaryListServiceTests.swift; sourceTree = "<group>"; };
+		0F25713B2B489FB5000CD8B6 /* PlanetaryListRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetaryListRepositoryTests.swift; sourceTree = "<group>"; };
+		0F25713E2B48A0C6000CD8B6 /* NavigatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigatorTests.swift; sourceTree = "<group>"; };
+		0F2571402B48A185000CD8B6 /* NavigationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTests.swift; sourceTree = "<group>"; };
+		0F2571442B48A395000CD8B6 /* PlanetaryDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetaryDetailViewModelTests.swift; sourceTree = "<group>"; };
+		0F2571482B48A5B7000CD8B6 /* PlanetaryListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetaryListViewModelTests.swift; sourceTree = "<group>"; };
+		0FE8AB462B47ECA300399CAB /* Astronomy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Astronomy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FE8AB492B47ECA300399CAB /* AstronomyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronomyApp.swift; sourceTree = "<group>"; };
+		0FE8AB4B2B47ECA300399CAB /* NavigationScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationScreen.swift; sourceTree = "<group>"; };
+		0FE8AB4D2B47ECA500399CAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0FE8AB502B47ECA500399CAB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0FE8AB562B47ECA500399CAB /* AstronomyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AstronomyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FE8AB5A2B47ECA500399CAB /* AstronomyTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronomyTestCase.swift; sourceTree = "<group>"; };
+		0FE8AB602B47ECA500399CAB /* AstronomyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AstronomyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FE8AB642B47ECA500399CAB /* AstronomyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronomyUITests.swift; sourceTree = "<group>"; };
+		0FE8AB662B47ECA500399CAB /* AstronomyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronomyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0FE8AB732B47EEED00399CAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		0FE8AB822B47F29D00399CAB /* SwiftUIWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIWebView.swift; sourceTree = "<group>"; };
+		0FE8AB842B47F2C500399CAB /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		0FE8AB882B47F3DC00399CAB /* DateFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormat.swift; sourceTree = "<group>"; };
+		0FE8AB8C2B47F45000399CAB /* Contants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contants.swift; sourceTree = "<group>"; };
+		0FE8AB912B47F4EF00399CAB /* UITestingHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestingHelper.swift; sourceTree = "<group>"; };
+		0FE8AB9D2B47FCE100399CAB /* PlanetaryListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetaryListScreen.swift; sourceTree = "<group>"; };
+		0FE8AB9F2B47FD2200399CAB /* PlanetaryItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetaryItemView.swift; sourceTree = "<group>"; };
+		0FE8ABA22B47FD8100399CAB /* PlanetaryDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetaryDetailScreen.swift; sourceTree = "<group>"; };
+		0FE8ABAD2B4802C400399CAB /* PlanetaryListInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetaryListInterface.swift; sourceTree = "<group>"; };
+		0FE8ABAF2B48043600399CAB /* PlanetaryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetaryListViewModel.swift; sourceTree = "<group>"; };
+		0FE8ABB32B48046E00399CAB /* PlanetaryListUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetaryListUseCase.swift; sourceTree = "<group>"; };
+		0FE8ABBC2B4806CA00399CAB /* APIEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoint.swift; sourceTree = "<group>"; };
+		0FE8ABC02B4806E700399CAB /* APIQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIQuery.swift; sourceTree = "<group>"; };
+		0FE8ABC42B4806F800399CAB /* APIQueryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIQueryItem.swift; sourceTree = "<group>"; };
+		0FE8ABC92B4807D000399CAB /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		0FE8ABCC2B48081B00399CAB /* URLErrorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLErrorExtension.swift; sourceTree = "<group>"; };
+		0FE8ABCF2B48083900399CAB /* BundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
+		0FE8ABD32B4808D700399CAB /* JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
+		0FE8ABD62B48094300399CAB /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		0FE8ABD92B4809E400399CAB /* Endpoints.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Endpoints.plist; sourceTree = "<group>"; };
+		0FE8ABDC2B480A2C00399CAB /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		0FE8ABE02B480A4300399CAB /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		0FE8ABE42B480A7200399CAB /* HTTPMIMEType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMIMEType.swift; sourceTree = "<group>"; };
+		0FE8ABE82B480AAE00399CAB /* HTTPHeaders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPHeaders.swift; sourceTree = "<group>"; };
+		0FE8ABEC2B480C0100399CAB /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		0FE8ABEF2B480E8800399CAB /* Mappable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mappable.swift; sourceTree = "<group>"; };
+		0FE8ABF82B48119600399CAB /* PlanetaryDomainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetaryDomainModel.swift; sourceTree = "<group>"; };
+		0FE8ABFB2B4811EF00399CAB /* PlanetaryDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetaryDataModel.swift; sourceTree = "<group>"; };
+		0FE8AC012B4814A800399CAB /* PlanetaryListServiceInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetaryListServiceInterface.swift; sourceTree = "<group>"; };
+		0FE8AC042B4815B500399CAB /* NetworkManagerInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerInterface.swift; sourceTree = "<group>"; };
+		0FE8AC072B48181900399CAB /* PlanetaryListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetaryListService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0FE8AB432B47ECA300399CAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FE8ABA92B47FF0200399CAB /* SDWebImageSwiftUI in Frameworks */,
+				0FE8ABA62B47FEEE00399CAB /* PromiseKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FE8AB532B47ECA500399CAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FE8AB5D2B47ECA500399CAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F2570992B481A57000CD8B6 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				0FE8ABAB2B48022800399CAB /* Network */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		0F25709C2B481DA6000CD8B6 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				0F2570DC2B485E2F000CD8B6 /* DataModel.swift */,
+				0FE8ABFB2B4811EF00399CAB /* PlanetaryDataModel.swift */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		0F25709E2B481DC3000CD8B6 /* ReqeustModel */ = {
+			isa = PBXGroup;
+			children = (
+				0F25709F2B481DE1000CD8B6 /* PlanetaryListRequest.swift */,
+			);
+			path = ReqeustModel;
+			sourceTree = "<group>";
+		};
+		0F2570AA2B482749000CD8B6 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				0F2570B52B482E1F000CD8B6 /* PlanetaryListRepositoryFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		0F2570BE2B48353C000CD8B6 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				0F2570C02B483569000CD8B6 /* NavigatorRouter */,
+				0F2570BF2B48355F000CD8B6 /* View */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		0F2570BF2B48355F000CD8B6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0F2570C12B4835AE000CD8B6 /* Screen */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0F2570C02B483569000CD8B6 /* NavigatorRouter */ = {
+			isa = PBXGroup;
+			children = (
+				0F2570C22B48362F000CD8B6 /* Navigator.swift */,
+				0F2570C52B483697000CD8B6 /* Navigation.swift */,
+			);
+			path = NavigatorRouter;
+			sourceTree = "<group>";
+		};
+		0F2570C12B4835AE000CD8B6 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				0FE8AB4B2B47ECA300399CAB /* NavigationScreen.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		0F2570C82B48383F000CD8B6 /* AstronomyTestCases */ = {
+			isa = PBXGroup;
+			children = (
+				0FE8AB5A2B47ECA500399CAB /* AstronomyTestCase.swift */,
+			);
+			path = AstronomyTestCases;
+			sourceTree = "<group>";
+		};
+		0F2570C92B4838BB000CD8B6 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0F25712F2B48963A000CD8B6 /* Constants */,
+				0F25712C2B4895FE000CD8B6 /* DateFormat */,
+				0F2571182B489388000CD8B6 /* Infrastructure */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		0F2570CA2B4838C9000CD8B6 /* URLError */ = {
+			isa = PBXGroup;
+			children = (
+				0F2571142B48930F000CD8B6 /* MockURLErrorData.swift */,
+				0F2571162B489327000CD8B6 /* URLErrorTests.swift */,
+			);
+			path = URLError;
+			sourceTree = "<group>";
+		};
+		0F2570CB2B4838D7000CD8B6 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				0F2570CC2B483902000CD8B6 /* SampleData */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		0F2570CC2B483902000CD8B6 /* SampleData */ = {
+			isa = PBXGroup;
+			children = (
+				0F2570CD2B483925000CD8B6 /* Planetaries.json */,
+			);
+			path = SampleData;
+			sourceTree = "<group>";
+		};
+		0F2570EB2B48702D000CD8B6 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				0F2570C92B4838BB000CD8B6 /* Utils */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		0F2570EC2B48703C000CD8B6 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				0F2571322B4897F3000CD8B6 /* UseCase */,
+				0F25710B2B488B9E000CD8B6 /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		0F2570ED2B48704B000CD8B6 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				0F25713A2B489FA7000CD8B6 /* Repository */,
+				0F2571372B489F0D000CD8B6 /* Service */,
+				0F2571002B4888F9000CD8B6 /* Model */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		0F2570EE2B487062000CD8B6 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				0F2571462B48A59C000CD8B6 /* PlanetaryList */,
+				0F2571422B48A377000CD8B6 /* PlanetaryDetail */,
+				0F25713D2B48A09A000CD8B6 /* Navigation */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		0F2570EF2B48718C000CD8B6 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				0FE8AB772B47EF7C00399CAB /* Presentation */,
+				0FE8AB762B47EF6600399CAB /* Domain */,
+				0FE8AB752B47EF5A00399CAB /* Data */,
+				0FE8AB742B47EF3E00399CAB /* Core */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		0F2571002B4888F9000CD8B6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0F2571042B488997000CD8B6 /* DataModel */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0F2571042B488997000CD8B6 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				0F2571012B488918000CD8B6 /* MockPlanetaryDataModel.swift */,
+				0F2571062B488A14000CD8B6 /* PlanetaryDataModelTests.swift */,
+				0F2571082B488A79000CD8B6 /* MockDataModel.swift */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		0F25710B2B488B9E000CD8B6 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				0F25710C2B488BC3000CD8B6 /* MockPlanetaryDomainModel.swift */,
+				0F25710F2B488CE7000CD8B6 /* PlanetaryDomainModelTests.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		0F2571182B489388000CD8B6 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				0F2571192B489396000CD8B6 /* Network */,
+				0F2570CA2B4838C9000CD8B6 /* URLError */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		0F2571192B489396000CD8B6 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				0F25711E2B4893DB000CD8B6 /* APIEndpoint */,
+				0F25711A2B4893A1000CD8B6 /* QueryModel */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		0F25711A2B4893A1000CD8B6 /* QueryModel */ = {
+			isa = PBXGroup;
+			children = (
+				0F25711D2B4893B3000CD8B6 /* HTTPMethod */,
+				0F25711C2B4893AE000CD8B6 /* HTTPMIMEType */,
+				0F25711B2B4893A9000CD8B6 /* HTTPHeaders */,
+			);
+			path = QueryModel;
+			sourceTree = "<group>";
+		};
+		0F25711B2B4893A9000CD8B6 /* HTTPHeaders */ = {
+			isa = PBXGroup;
+			children = (
+				0F2571282B4895AD000CD8B6 /* HTTPHeadersTests.swift */,
+				0F25712A2B4895BB000CD8B6 /* HTTPHeadersMock.swift */,
+			);
+			path = HTTPHeaders;
+			sourceTree = "<group>";
+		};
+		0F25711C2B4893AE000CD8B6 /* HTTPMIMEType */ = {
+			isa = PBXGroup;
+			children = (
+				0F2571212B489415000CD8B6 /* HTTPMIMETypeTests.swift */,
+			);
+			path = HTTPMIMEType;
+			sourceTree = "<group>";
+		};
+		0F25711D2B4893B3000CD8B6 /* HTTPMethod */ = {
+			isa = PBXGroup;
+			children = (
+				0F2571262B489546000CD8B6 /* HTTPMethodTests.swift */,
+				0F2571232B48943A000CD8B6 /* HTTPMethodMock.swift */,
+			);
+			path = HTTPMethod;
+			sourceTree = "<group>";
+		};
+		0F25711E2B4893DB000CD8B6 /* APIEndpoint */ = {
+			isa = PBXGroup;
+			children = (
+				0F25711F2B4893E6000CD8B6 /* EndpointTests.swift */,
+			);
+			path = APIEndpoint;
+			sourceTree = "<group>";
+		};
+		0F25712C2B4895FE000CD8B6 /* DateFormat */ = {
+			isa = PBXGroup;
+			children = (
+				0F25712D2B48960F000CD8B6 /* DateFormatTests.swift */,
+			);
+			path = DateFormat;
+			sourceTree = "<group>";
+		};
+		0F25712F2B48963A000CD8B6 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				0F2571302B489642000CD8B6 /* ConstantsTests.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		0F2571322B4897F3000CD8B6 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				0F2571332B489802000CD8B6 /* PlanetaryListUseCaseTests.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		0F2571372B489F0D000CD8B6 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				0F2570A72B482616000CD8B6 /* MockPlanetaryListService.swift */,
+				0F2571382B489F6A000CD8B6 /* PlanetaryListServiceTests.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		0F25713A2B489FA7000CD8B6 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				0F25713B2B489FB5000CD8B6 /* PlanetaryListRepositoryTests.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		0F25713D2B48A09A000CD8B6 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				0F25713E2B48A0C6000CD8B6 /* NavigatorTests.swift */,
+				0F2571402B48A185000CD8B6 /* NavigationTests.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		0F2571422B48A377000CD8B6 /* PlanetaryDetail */ = {
+			isa = PBXGroup;
+			children = (
+				0F2571432B48A387000CD8B6 /* ViewModel */,
+			);
+			path = PlanetaryDetail;
+			sourceTree = "<group>";
+		};
+		0F2571432B48A387000CD8B6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0F2571442B48A395000CD8B6 /* PlanetaryDetailViewModelTests.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0F2571462B48A59C000CD8B6 /* PlanetaryList */ = {
+			isa = PBXGroup;
+			children = (
+				0F2571472B48A5A1000CD8B6 /* ViewModel */,
+			);
+			path = PlanetaryList;
+			sourceTree = "<group>";
+		};
+		0F2571472B48A5A1000CD8B6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0F2571482B48A5B7000CD8B6 /* PlanetaryListViewModelTests.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0FE8AB3D2B47ECA300399CAB = {
+			isa = PBXGroup;
+			children = (
+				0FE8AB482B47ECA300399CAB /* Astronomy */,
+				0FE8AB592B47ECA500399CAB /* AstronomyTests */,
+				0FE8AB632B47ECA500399CAB /* AstronomyUITests */,
+				0FE8AB472B47ECA300399CAB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0FE8AB472B47ECA300399CAB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0FE8AB462B47ECA300399CAB /* Astronomy.app */,
+				0FE8AB562B47ECA500399CAB /* AstronomyTests.xctest */,
+				0FE8AB602B47ECA500399CAB /* AstronomyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0FE8AB482B47ECA300399CAB /* Astronomy */ = {
+			isa = PBXGroup;
+			children = (
+				0F2570CB2B4838D7000CD8B6 /* Resource */,
+				0F2570EF2B48718C000CD8B6 /* Source */,
+				0FE8AB732B47EEED00399CAB /* Info.plist */,
+				0FE8AB4D2B47ECA500399CAB /* Assets.xcassets */,
+				0FE8AB4F2B47ECA500399CAB /* Preview Content */,
+			);
+			path = Astronomy;
+			sourceTree = "<group>";
+		};
+		0FE8AB4F2B47ECA500399CAB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				0FE8AB502B47ECA500399CAB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0FE8AB592B47ECA500399CAB /* AstronomyTests */ = {
+			isa = PBXGroup;
+			children = (
+				0F2570EE2B487062000CD8B6 /* Presentation */,
+				0F2570EC2B48703C000CD8B6 /* Domain */,
+				0F2570ED2B48704B000CD8B6 /* Data */,
+				0F2570EB2B48702D000CD8B6 /* Core */,
+				0F2570C82B48383F000CD8B6 /* AstronomyTestCases */,
+			);
+			path = AstronomyTests;
+			sourceTree = "<group>";
+		};
+		0FE8AB632B47ECA500399CAB /* AstronomyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0FE8AB642B47ECA500399CAB /* AstronomyUITests.swift */,
+				0FE8AB662B47ECA500399CAB /* AstronomyUITestsLaunchTests.swift */,
+				0F2570E52B486E7D000CD8B6 /* NavigationUITests.swift */,
+				0F2570E72B486EBD000CD8B6 /* PlanetaryListUITests.swift */,
+				0F2570E92B486F1D000CD8B6 /* PlanetaryDetailUITests.swift */,
+			);
+			path = AstronomyUITests;
+			sourceTree = "<group>";
+		};
+		0FE8AB742B47EF3E00399CAB /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				0FE8AB8F2B47F4AE00399CAB /* Utils */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		0FE8AB752B47EF5A00399CAB /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				0F2570AA2B482749000CD8B6 /* Factory */,
+				0FE8AB952B47F92400399CAB /* Service */,
+				0FE8AB9A2B47FAAA00399CAB /* Model */,
+				0FE8AB962B47F9DB00399CAB /* Repository */,
+				0FE8AB942B47F6F900399CAB /* DataMapping */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		0FE8AB762B47EF6600399CAB /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				0FE8AB982B47FA1500399CAB /* UseCase */,
+				0FE8ABAC2B48029100399CAB /* Interface */,
+				0FE8AB972B47FA0900399CAB /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		0FE8AB772B47EF7C00399CAB /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				0F2570BE2B48353C000CD8B6 /* Navigation */,
+				0FE8AB7F2B47F22F00399CAB /* PlanetaryDetail */,
+				0FE8AB7E2B47F21400399CAB /* Components */,
+				0FE8AB792B47F18000399CAB /* PlanetaryList */,
+				0FE8AB782B47F0E000399CAB /* App */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		0FE8AB782B47F0E000399CAB /* App */ = {
+			isa = PBXGroup;
+			children = (
+				0FE8AB492B47ECA300399CAB /* AstronomyApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		0FE8AB792B47F18000399CAB /* PlanetaryList */ = {
+			isa = PBXGroup;
+			children = (
+				0FE8AB7B2B47F1B300399CAB /* ViewModel */,
+				0FE8AB7A2B47F1A600399CAB /* View */,
+			);
+			path = PlanetaryList;
+			sourceTree = "<group>";
+		};
+		0FE8AB7A2B47F1A600399CAB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0FE8AB9C2B47FC8A00399CAB /* Component */,
+				0FE8AB9B2B47FC8000399CAB /* Screen */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0FE8AB7B2B47F1B300399CAB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0FE8ABAF2B48043600399CAB /* PlanetaryListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0FE8AB7C2B47F1CD00399CAB /* PlayerView */ = {
+			isa = PBXGroup;
+			children = (
+				0FE8AB842B47F2C500399CAB /* PlayerView.swift */,
+			);
+			path = PlayerView;
+			sourceTree = "<group>";
+		};
+		0FE8AB7D2B47F1D500399CAB /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				0FE8AB822B47F29D00399CAB /* SwiftUIWebView.swift */,
+			);
+			path = WebView;
+			sourceTree = "<group>";
+		};
+		0FE8AB7E2B47F21400399CAB /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				0FE8AB7D2B47F1D500399CAB /* WebView */,
+				0FE8AB7C2B47F1CD00399CAB /* PlayerView */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		0FE8AB7F2B47F22F00399CAB /* PlanetaryDetail */ = {
+			isa = PBXGroup;
+			children = (
+				0FE8AB812B47F24600399CAB /* ViewModel */,
+				0FE8AB802B47F23F00399CAB /* View */,
+			);
+			path = PlanetaryDetail;
+			sourceTree = "<group>";
+		};
+		0FE8AB802B47F23F00399CAB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0FE8ABA12B47FD6800399CAB /* Screen */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0FE8AB812B47F24600399CAB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0F2570D02B48398C000CD8B6 /* PlanetaryDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0FE8AB872B47F3CF00399CAB /* DateFormat */ = {
+			isa = PBXGroup;
+			children = (
+				0FE8AB882B47F3DC00399CAB /* DateFormat.swift */,
+			);
+			path = DateFormat;
+			sourceTree = "<group>";
+		};
+		0FE8AB8B2B47F43A00399CAB /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				0FE8AB8C2B47F45000399CAB /* Contants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		0FE8AB8F2B47F4AE00399CAB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0FE8ABD22B4808AA00399CAB /* JSON */,
+				0FE8ABC82B4807A100399CAB /* Extensions */,
+				0F2570992B481A57000CD8B6 /* Infrastructure */,
+				0FE8AB8B2B47F43A00399CAB /* Constants */,
+				0FE8AB872B47F3CF00399CAB /* DateFormat */,
+				0FE8AB902B47F4BA00399CAB /* UITestingHelper */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		0FE8AB902B47F4BA00399CAB /* UITestingHelper */ = {
+			isa = PBXGroup;
+			children = (
+				0FE8AB912B47F4EF00399CAB /* UITestingHelper.swift */,
+			);
+			path = UITestingHelper;
+			sourceTree = "<group>";
+		};
+		0FE8AB942B47F6F900399CAB /* DataMapping */ = {
+			isa = PBXGroup;
+			children = (
+				0FE8ABEE2B480E5D00399CAB /* Mappable */,
+				0FE8ABAA2B4800A200399CAB /* Planetary */,
+			);
+			path = DataMapping;
+			sourceTree = "<group>";
+		};
+		0FE8AB952B47F92400399CAB /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				0FE8AC012B4814A800399CAB /* PlanetaryListServiceInterface.swift */,
+				0FE8AC072B48181900399CAB /* PlanetaryListService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		0FE8AB962B47F9DB00399CAB /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				0F2570AF2B482ACC000CD8B6 /* PlanetaryListRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		0FE8AB972B47FA0900399CAB /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				0F2570DF2B485ED0000CD8B6 /* DomainModel.swift */,
+				0FE8ABF82B48119600399CAB /* PlanetaryDomainModel.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		0FE8AB982B47FA1500399CAB /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				0FE8ABB32B48046E00399CAB /* PlanetaryListUseCase.swift */,
+				0F2570D32B483A05000CD8B6 /* PlanetaryDetailUseCase.swift */,
+				0F2570BB2B4834DC000CD8B6 /* PlanetaryListUseCaseFactory.swift */,
+				0F2570D92B485C81000CD8B6 /* PlanetaryDetailUseCaseFactory.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		0FE8AB992B47FA2100399CAB /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				0FE8ABAD2B4802C400399CAB /* PlanetaryListInterface.swift */,
+				0F2570E22B48675D000CD8B6 /* PlanetaryDetailInterface.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		0FE8AB9A2B47FAAA00399CAB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0F25709E2B481DC3000CD8B6 /* ReqeustModel */,
+				0F25709C2B481DA6000CD8B6 /* DataModel */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0FE8AB9B2B47FC8000399CAB /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				0FE8AB9D2B47FCE100399CAB /* PlanetaryListScreen.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		0FE8AB9C2B47FC8A00399CAB /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				0FE8AB9F2B47FD2200399CAB /* PlanetaryItemView.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		0FE8ABA12B47FD6800399CAB /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				0FE8ABA22B47FD8100399CAB /* PlanetaryDetailScreen.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		0FE8ABAA2B4800A200399CAB /* Planetary */ = {
+			isa = PBXGroup;
+			children = (
+				0F2570D62B484FA4000CD8B6 /* PlanetaryMapper.swift */,
+			);
+			path = Planetary;
+			sourceTree = "<group>";
+		};
+		0FE8ABAB2B48022800399CAB /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				0FE8ABEB2B480BB900399CAB /* APIManager */,
+				0FE8ABBF2B4806D900399CAB /* QueryModel */,
+				0FE8ABB92B48061D00399CAB /* APIRequest */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		0FE8ABAC2B48029100399CAB /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				0FE8AB992B47FA2100399CAB /* Repositories */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		0FE8ABB92B48061D00399CAB /* APIRequest */ = {
+			isa = PBXGroup;
+			children = (
+				0FE8ABDC2B480A2C00399CAB /* APIRequest.swift */,
+			);
+			path = APIRequest;
+			sourceTree = "<group>";
+		};
+		0FE8ABBF2B4806D900399CAB /* QueryModel */ = {
+			isa = PBXGroup;
+			children = (
+				0FE8ABE72B480AA700399CAB /* HTTPHeaders */,
+				0FE8ABE32B480A6D00399CAB /* HTTPMIMEType */,
+				0FE8ABDF2B480A3D00399CAB /* HTTPMethod */,
+				0FE8ABC72B48078200399CAB /* APIEndpoint */,
+				0FE8ABC32B4806EC00399CAB /* APIQuery */,
+			);
+			path = QueryModel;
+			sourceTree = "<group>";
+		};
+		0FE8ABC32B4806EC00399CAB /* APIQuery */ = {
+			isa = PBXGroup;
+			children = (
+				0FE8ABC02B4806E700399CAB /* APIQuery.swift */,
+				0FE8ABC42B4806F800399CAB /* APIQueryItem.swift */,
+			);
+			path = APIQuery;
+			sourceTree = "<group>";
+		};
+		0FE8ABC72B48078200399CAB /* APIEndpoint */ = {
+			isa = PBXGroup;
+			children = (
+				0FE8ABBC2B4806CA00399CAB /* APIEndpoint.swift */,
+				0FE8ABD62B48094300399CAB /* Endpoint.swift */,
+				0FE8ABD92B4809E400399CAB /* Endpoints.plist */,
+			);
+			path = APIEndpoint;
+			sourceTree = "<group>";
+		};
+		0FE8ABC82B4807A100399CAB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0FE8ABC92B4807D000399CAB /* ViewExtension.swift */,
+				0FE8ABCC2B48081B00399CAB /* URLErrorExtension.swift */,
+				0FE8ABCF2B48083900399CAB /* BundleExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0FE8ABD22B4808AA00399CAB /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				0FE8ABD32B4808D700399CAB /* JSON.swift */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		0FE8ABDF2B480A3D00399CAB /* HTTPMethod */ = {
+			isa = PBXGroup;
+			children = (
+				0FE8ABE02B480A4300399CAB /* HTTPMethod.swift */,
+			);
+			path = HTTPMethod;
+			sourceTree = "<group>";
+		};
+		0FE8ABE32B480A6D00399CAB /* HTTPMIMEType */ = {
+			isa = PBXGroup;
+			children = (
+				0FE8ABE42B480A7200399CAB /* HTTPMIMEType.swift */,
+			);
+			path = HTTPMIMEType;
+			sourceTree = "<group>";
+		};
+		0FE8ABE72B480AA700399CAB /* HTTPHeaders */ = {
+			isa = PBXGroup;
+			children = (
+				0FE8ABE82B480AAE00399CAB /* HTTPHeaders.swift */,
+			);
+			path = HTTPHeaders;
+			sourceTree = "<group>";
+		};
+		0FE8ABEB2B480BB900399CAB /* APIManager */ = {
+			isa = PBXGroup;
+			children = (
+				0FE8AC042B4815B500399CAB /* NetworkManagerInterface.swift */,
+				0FE8ABEC2B480C0100399CAB /* NetworkManager.swift */,
+				0F2570B22B482B8F000CD8B6 /* NetworkFactory.swift */,
+			);
+			path = APIManager;
+			sourceTree = "<group>";
+		};
+		0FE8ABEE2B480E5D00399CAB /* Mappable */ = {
+			isa = PBXGroup;
+			children = (
+				0FE8ABEF2B480E8800399CAB /* Mappable.swift */,
+			);
+			path = Mappable;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0FE8AB452B47ECA300399CAB /* Astronomy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0FE8AB6A2B47ECA500399CAB /* Build configuration list for PBXNativeTarget "Astronomy" */;
+			buildPhases = (
+				0FE8AB422B47ECA300399CAB /* Sources */,
+				0FE8AB432B47ECA300399CAB /* Frameworks */,
+				0FE8AB442B47ECA300399CAB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Astronomy;
+			packageProductDependencies = (
+				0FE8ABA52B47FEEE00399CAB /* PromiseKit */,
+				0FE8ABA82B47FF0200399CAB /* SDWebImageSwiftUI */,
+			);
+			productName = Astronomy;
+			productReference = 0FE8AB462B47ECA300399CAB /* Astronomy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0FE8AB552B47ECA500399CAB /* AstronomyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0FE8AB6D2B47ECA500399CAB /* Build configuration list for PBXNativeTarget "AstronomyTests" */;
+			buildPhases = (
+				0FE8AB522B47ECA500399CAB /* Sources */,
+				0FE8AB532B47ECA500399CAB /* Frameworks */,
+				0FE8AB542B47ECA500399CAB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0FE8AB582B47ECA500399CAB /* PBXTargetDependency */,
+			);
+			name = AstronomyTests;
+			productName = AstronomyTests;
+			productReference = 0FE8AB562B47ECA500399CAB /* AstronomyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0FE8AB5F2B47ECA500399CAB /* AstronomyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0FE8AB702B47ECA500399CAB /* Build configuration list for PBXNativeTarget "AstronomyUITests" */;
+			buildPhases = (
+				0FE8AB5C2B47ECA500399CAB /* Sources */,
+				0FE8AB5D2B47ECA500399CAB /* Frameworks */,
+				0FE8AB5E2B47ECA500399CAB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0FE8AB622B47ECA500399CAB /* PBXTargetDependency */,
+			);
+			name = AstronomyUITests;
+			productName = AstronomyUITests;
+			productReference = 0FE8AB602B47ECA500399CAB /* AstronomyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0FE8AB3E2B47ECA300399CAB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1510;
+				LastUpgradeCheck = 1510;
+				TargetAttributes = {
+					0FE8AB452B47ECA300399CAB = {
+						CreatedOnToolsVersion = 15.1;
+					};
+					0FE8AB552B47ECA500399CAB = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = 0FE8AB452B47ECA300399CAB;
+					};
+					0FE8AB5F2B47ECA500399CAB = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = 0FE8AB452B47ECA300399CAB;
+					};
+				};
+			};
+			buildConfigurationList = 0FE8AB412B47ECA300399CAB /* Build configuration list for PBXProject "Astronomy" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0FE8AB3D2B47ECA300399CAB;
+			packageReferences = (
+				0FE8ABA42B47FEEE00399CAB /* XCRemoteSwiftPackageReference "PromiseKit" */,
+				0FE8ABA72B47FF0200399CAB /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
+			productRefGroup = 0FE8AB472B47ECA300399CAB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0FE8AB452B47ECA300399CAB /* Astronomy */,
+				0FE8AB552B47ECA500399CAB /* AstronomyTests */,
+				0FE8AB5F2B47ECA500399CAB /* AstronomyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0FE8AB442B47ECA300399CAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F2570CE2B483925000CD8B6 /* Planetaries.json in Resources */,
+				0FE8AB512B47ECA500399CAB /* Preview Assets.xcassets in Resources */,
+				0FE8ABDA2B4809E400399CAB /* Endpoints.plist in Resources */,
+				0FE8AB4E2B47ECA500399CAB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FE8AB542B47ECA500399CAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F2570CF2B483925000CD8B6 /* Planetaries.json in Resources */,
+				0FE8ABDB2B4809E400399CAB /* Endpoints.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FE8AB5E2B47ECA500399CAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0FE8AB422B47ECA300399CAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F25710D2B488BC3000CD8B6 /* MockPlanetaryDomainModel.swift in Sources */,
+				0FE8ABCA2B4807D000399CAB /* ViewExtension.swift in Sources */,
+				0FE8ABAE2B4802C400399CAB /* PlanetaryListInterface.swift in Sources */,
+				0FE8ABED2B480C0100399CAB /* NetworkManager.swift in Sources */,
+				0F2570C62B483697000CD8B6 /* Navigation.swift in Sources */,
+				0FE8AB9E2B47FCE100399CAB /* PlanetaryListScreen.swift in Sources */,
+				0F2570E02B485ED0000CD8B6 /* DomainModel.swift in Sources */,
+				0F2570DD2B485E2F000CD8B6 /* DataModel.swift in Sources */,
+				0F2570D42B483A05000CD8B6 /* PlanetaryDetailUseCase.swift in Sources */,
+				0F2570BC2B4834DC000CD8B6 /* PlanetaryListUseCaseFactory.swift in Sources */,
+				0FE8AC022B4814A800399CAB /* PlanetaryListServiceInterface.swift in Sources */,
+				0FE8ABC52B4806F800399CAB /* APIQueryItem.swift in Sources */,
+				0FE8AB4C2B47ECA300399CAB /* NavigationScreen.swift in Sources */,
+				0FE8ABBD2B4806CA00399CAB /* APIEndpoint.swift in Sources */,
+				0FE8ABB02B48043600399CAB /* PlanetaryListViewModel.swift in Sources */,
+				0FE8AB4A2B47ECA300399CAB /* AstronomyApp.swift in Sources */,
+				0F2570B02B482ACC000CD8B6 /* PlanetaryListRepository.swift in Sources */,
+				0FE8ABA32B47FD8100399CAB /* PlanetaryDetailScreen.swift in Sources */,
+				0F2570D72B484FA4000CD8B6 /* PlanetaryMapper.swift in Sources */,
+				0FE8AC052B4815B500399CAB /* NetworkManagerInterface.swift in Sources */,
+				0FE8ABDD2B480A2C00399CAB /* APIRequest.swift in Sources */,
+				0FE8ABA02B47FD2200399CAB /* PlanetaryItemView.swift in Sources */,
+				0FE8ABE92B480AAE00399CAB /* HTTPHeaders.swift in Sources */,
+				0FE8ABC12B4806E700399CAB /* APIQuery.swift in Sources */,
+				0FE8ABF02B480E8800399CAB /* Mappable.swift in Sources */,
+				0FE8ABF92B48119600399CAB /* PlanetaryDomainModel.swift in Sources */,
+				0FE8AB922B47F4EF00399CAB /* UITestingHelper.swift in Sources */,
+				0FE8ABE52B480A7200399CAB /* HTTPMIMEType.swift in Sources */,
+				0FE8AC082B48181900399CAB /* PlanetaryListService.swift in Sources */,
+				0F2570E32B48675D000CD8B6 /* PlanetaryDetailInterface.swift in Sources */,
+				0FE8AB832B47F29D00399CAB /* SwiftUIWebView.swift in Sources */,
+				0F2571252B489520000CD8B6 /* MockPlanetaryDataModel.swift in Sources */,
+				0F2570DA2B485C81000CD8B6 /* PlanetaryDetailUseCaseFactory.swift in Sources */,
+				0FE8ABB42B48046E00399CAB /* PlanetaryListUseCase.swift in Sources */,
+				0FE8ABD42B4808D700399CAB /* JSON.swift in Sources */,
+				0FE8ABD02B48083900399CAB /* BundleExtension.swift in Sources */,
+				0FE8AB892B47F3DC00399CAB /* DateFormat.swift in Sources */,
+				0FE8AB852B47F2C500399CAB /* PlayerView.swift in Sources */,
+				0FE8ABE12B480A4300399CAB /* HTTPMethod.swift in Sources */,
+				0F2570B32B482B8F000CD8B6 /* NetworkFactory.swift in Sources */,
+				0F2570A82B482616000CD8B6 /* MockPlanetaryListService.swift in Sources */,
+				0FE8ABCD2B48081B00399CAB /* URLErrorExtension.swift in Sources */,
+				0FE8ABD72B48094300399CAB /* Endpoint.swift in Sources */,
+				0FE8AB8D2B47F45000399CAB /* Contants.swift in Sources */,
+				0F2570B62B482E1F000CD8B6 /* PlanetaryListRepositoryFactory.swift in Sources */,
+				0F2570D12B48398C000CD8B6 /* PlanetaryDetailViewModel.swift in Sources */,
+				0F2570A02B481DE1000CD8B6 /* PlanetaryListRequest.swift in Sources */,
+				0F2570C32B48362F000CD8B6 /* Navigator.swift in Sources */,
+				0FE8ABFC2B4811EF00399CAB /* PlanetaryDataModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FE8AB522B47ECA500399CAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F2571132B488F8C000CD8B6 /* NetworkManager.swift in Sources */,
+				0F2571222B489415000CD8B6 /* HTTPMIMETypeTests.swift in Sources */,
+				0F2570B12B482ACC000CD8B6 /* PlanetaryListRepository.swift in Sources */,
+				0F2570C72B483697000CD8B6 /* Navigation.swift in Sources */,
+				0FE8ABB12B48043600399CAB /* PlanetaryListViewModel.swift in Sources */,
+				0F2571122B488F83000CD8B6 /* NetworkFactory.swift in Sources */,
+				0F2571032B488918000CD8B6 /* MockPlanetaryDataModel.swift in Sources */,
+				0FE8ABD52B4808D700399CAB /* JSON.swift in Sources */,
+				0FE8ABC22B4806E700399CAB /* APIQuery.swift in Sources */,
+				0F2570FC2B488061000CD8B6 /* NetworkManagerInterface.swift in Sources */,
+				0FE8ABD12B48083900399CAB /* BundleExtension.swift in Sources */,
+				0F2570C42B48362F000CD8B6 /* Navigator.swift in Sources */,
+				0FE8ABD82B48094300399CAB /* Endpoint.swift in Sources */,
+				0FE8AB932B47F4EF00399CAB /* UITestingHelper.swift in Sources */,
+				0F2570F02B48724A000CD8B6 /* PlanetaryListInterface.swift in Sources */,
+				0F2570B72B482E1F000CD8B6 /* PlanetaryListRepositoryFactory.swift in Sources */,
+				0FE8ABEA2B480AAE00399CAB /* HTTPHeaders.swift in Sources */,
+				0F2571392B489F6A000CD8B6 /* PlanetaryListServiceTests.swift in Sources */,
+				0FE8ABC62B4806F800399CAB /* APIQueryItem.swift in Sources */,
+				0F2571412B48A185000CD8B6 /* NavigationTests.swift in Sources */,
+				0F2571102B488CE7000CD8B6 /* PlanetaryDomainModelTests.swift in Sources */,
+				0F2571272B489546000CD8B6 /* HTTPMethodTests.swift in Sources */,
+				0FE8ABB52B48046E00399CAB /* PlanetaryListUseCase.swift in Sources */,
+				0FE8ABF12B480E8800399CAB /* Mappable.swift in Sources */,
+				0F2570A92B482616000CD8B6 /* MockPlanetaryListService.swift in Sources */,
+				0FE8AB8A2B47F3DC00399CAB /* DateFormat.swift in Sources */,
+				0FE8ABFD2B4811EF00399CAB /* PlanetaryDataModel.swift in Sources */,
+				0F2570BD2B4834DC000CD8B6 /* PlanetaryListUseCaseFactory.swift in Sources */,
+				0F2570D52B483A05000CD8B6 /* PlanetaryDetailUseCase.swift in Sources */,
+				0F2571242B48943A000CD8B6 /* HTTPMethodMock.swift in Sources */,
+				0FE8AC032B4814A800399CAB /* PlanetaryListServiceInterface.swift in Sources */,
+				0F2571342B489802000CD8B6 /* PlanetaryListUseCaseTests.swift in Sources */,
+				0F2570A12B481DE1000CD8B6 /* PlanetaryListRequest.swift in Sources */,
+				0F2571452B48A395000CD8B6 /* PlanetaryDetailViewModelTests.swift in Sources */,
+				0F2571112B488F6C000CD8B6 /* PlanetaryListService.swift in Sources */,
+				0FE8ABCE2B48081B00399CAB /* URLErrorExtension.swift in Sources */,
+				0FE8ABE22B480A4300399CAB /* HTTPMethod.swift in Sources */,
+				0F2571492B48A5B7000CD8B6 /* PlanetaryListViewModelTests.swift in Sources */,
+				0FE8ABFA2B48119600399CAB /* PlanetaryDomainModel.swift in Sources */,
+				0F25713C2B489FB5000CD8B6 /* PlanetaryListRepositoryTests.swift in Sources */,
+				0F25710E2B488BC3000CD8B6 /* MockPlanetaryDomainModel.swift in Sources */,
+				0F25712E2B48960F000CD8B6 /* DateFormatTests.swift in Sources */,
+				0F2571202B4893E6000CD8B6 /* EndpointTests.swift in Sources */,
+				0F2570D82B484FA4000CD8B6 /* PlanetaryMapper.swift in Sources */,
+				0F25710A2B488A79000CD8B6 /* MockDataModel.swift in Sources */,
+				0F2571152B48930F000CD8B6 /* MockURLErrorData.swift in Sources */,
+				0F2570E42B48675D000CD8B6 /* PlanetaryDetailInterface.swift in Sources */,
+				0F2570DB2B485C81000CD8B6 /* PlanetaryDetailUseCaseFactory.swift in Sources */,
+				0F25713F2B48A0C6000CD8B6 /* NavigatorTests.swift in Sources */,
+				0F2570DE2B485E2F000CD8B6 /* DataModel.swift in Sources */,
+				0FE8AB5B2B47ECA500399CAB /* AstronomyTestCase.swift in Sources */,
+				0FE8AB8E2B47F45000399CAB /* Contants.swift in Sources */,
+				0F2570D22B48398C000CD8B6 /* PlanetaryDetailViewModel.swift in Sources */,
+				0F2571312B489642000CD8B6 /* ConstantsTests.swift in Sources */,
+				0FE8ABE62B480A7200399CAB /* HTTPMIMEType.swift in Sources */,
+				0FE8ABDE2B480A2C00399CAB /* APIRequest.swift in Sources */,
+				0FE8ABBE2B4806CA00399CAB /* APIEndpoint.swift in Sources */,
+				0F2571292B4895AD000CD8B6 /* HTTPHeadersTests.swift in Sources */,
+				0F2571072B488A14000CD8B6 /* PlanetaryDataModelTests.swift in Sources */,
+				0F2571172B489327000CD8B6 /* URLErrorTests.swift in Sources */,
+				0F25712B2B4895BB000CD8B6 /* HTTPHeadersMock.swift in Sources */,
+				0F2570E12B485ED0000CD8B6 /* DomainModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FE8AB5C2B47ECA500399CAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FE8AB652B47ECA500399CAB /* AstronomyUITests.swift in Sources */,
+				0F2570E62B486E7D000CD8B6 /* NavigationUITests.swift in Sources */,
+				0F2570E82B486EBD000CD8B6 /* PlanetaryListUITests.swift in Sources */,
+				0FE8AB672B47ECA500399CAB /* AstronomyUITestsLaunchTests.swift in Sources */,
+				0F2570EA2B486F1D000CD8B6 /* PlanetaryDetailUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0FE8AB582B47ECA500399CAB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0FE8AB452B47ECA300399CAB /* Astronomy */;
+			targetProxy = 0FE8AB572B47ECA500399CAB /* PBXContainerItemProxy */;
+		};
+		0FE8AB622B47ECA500399CAB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0FE8AB452B47ECA300399CAB /* Astronomy */;
+			targetProxy = 0FE8AB612B47ECA500399CAB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0FE8AB682B47ECA500399CAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0FE8AB692B47ECA500399CAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0FE8AB6B2B47ECA500399CAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Astronomy/Preview Content\"";
+				DEVELOPMENT_TEAM = 5J5UC3H8HZ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Astronomy/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.Astronomy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0FE8AB6C2B47ECA500399CAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Astronomy/Preview Content\"";
+				DEVELOPMENT_TEAM = 5J5UC3H8HZ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Astronomy/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.Astronomy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0FE8AB6E2B47ECA500399CAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5J5UC3H8HZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.AstronomyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Astronomy.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Astronomy";
+			};
+			name = Debug;
+		};
+		0FE8AB6F2B47ECA500399CAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5J5UC3H8HZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.AstronomyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Astronomy.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Astronomy";
+			};
+			name = Release;
+		};
+		0FE8AB712B47ECA500399CAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5J5UC3H8HZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.AstronomyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Astronomy;
+			};
+			name = Debug;
+		};
+		0FE8AB722B47ECA500399CAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5J5UC3H8HZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.AstronomyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Astronomy;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0FE8AB412B47ECA300399CAB /* Build configuration list for PBXProject "Astronomy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FE8AB682B47ECA500399CAB /* Debug */,
+				0FE8AB692B47ECA500399CAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0FE8AB6A2B47ECA500399CAB /* Build configuration list for PBXNativeTarget "Astronomy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FE8AB6B2B47ECA500399CAB /* Debug */,
+				0FE8AB6C2B47ECA500399CAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0FE8AB6D2B47ECA500399CAB /* Build configuration list for PBXNativeTarget "AstronomyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FE8AB6E2B47ECA500399CAB /* Debug */,
+				0FE8AB6F2B47ECA500399CAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0FE8AB702B47ECA500399CAB /* Build configuration list for PBXNativeTarget "AstronomyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FE8AB712B47ECA500399CAB /* Debug */,
+				0FE8AB722B47ECA500399CAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0FE8ABA42B47FEEE00399CAB /* XCRemoteSwiftPackageReference "PromiseKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mxcl/PromiseKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.1.1;
+			};
+		};
+		0FE8ABA72B47FF0200399CAB /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0FE8ABA52B47FEEE00399CAB /* PromiseKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0FE8ABA42B47FEEE00399CAB /* XCRemoteSwiftPackageReference "PromiseKit" */;
+			productName = PromiseKit;
+		};
+		0FE8ABA82B47FF0200399CAB /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0FE8ABA72B47FF0200399CAB /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 0FE8AB3E2B47ECA300399CAB /* Project object */;
+}

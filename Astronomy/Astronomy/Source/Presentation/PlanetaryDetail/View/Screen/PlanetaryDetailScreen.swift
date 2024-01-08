@@ -92,10 +92,3 @@ struct PlanetaryDetailScreen: View {
             .accessibilityIdentifier("explanationText")
     }
 }
-
-/*
-#Preview {
-    
-    PlanetaryDetailScreen(viewModel: PlanetaryDetailViewModelFactory.createViewModel(PlanetaryDomainModel.mockData(mediaType: .image)))
-}
-*/

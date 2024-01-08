@@ -12,8 +12,6 @@ final class PlanetaryListMapper: Mappable {
     func toDomain(_ input: [PlanetaryDataModel]) -> [PlanetaryDomainModel] {
         input.map { $0.toDomain()}
     }
-    
-    
 }
 
 extension PlanetaryDataModel {

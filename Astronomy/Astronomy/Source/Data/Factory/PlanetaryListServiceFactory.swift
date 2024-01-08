@@ -13,7 +13,7 @@ enum PlanetaryListServiceFactory {
         if UITestingHelper.isTestingOnly {
             return MockPlanetaryListService()
         } else {
-            let sessionManager = NetworkFactory.createtNetworkManager()
+            let sessionManager = NetworkFactory.createNetworkManager()
             let startDate = Date.today.date(daysFromToday:30) ~ .fullDateOnly
             let endDate =  Date.today.date(daysFromToday:1) ~ .fullDateOnly
             let request = PlanetaryListRequest(startDate: startDate, endDate: endDate, isThumb: true)

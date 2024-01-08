@@ -9,7 +9,7 @@ import Foundation
 
 final class NetworkFactory {
    
-    static func createtNetworkManager() -> NetworkManagerProtocol {
+    static func createNetworkManager() -> NetworkManagerProtocol {
         NetworkManager(configuration: .default)
     }
 }

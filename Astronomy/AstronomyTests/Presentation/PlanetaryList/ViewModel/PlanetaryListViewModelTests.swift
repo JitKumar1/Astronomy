@@ -31,7 +31,7 @@ final class PlanetaryListViewModelTests: AstronomyTestCase {
     }
     
     func testPlanetaryListViewModelFailure() throws {
-        let expectation = expectation(description: "PlanetaryListViewModel With Success")
+        let expectation = expectation(description: "PlanetaryListViewModel With Failure")
         let service = MockPlanetaryListErrorService()
         let useCase = PlanetaryListUseCase(repository: PlanetaryListRepository(service:service))
         let vieModel = PlanetaryListViewModel(useCase: useCase)

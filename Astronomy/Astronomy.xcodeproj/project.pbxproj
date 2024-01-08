@@ -684,7 +684,7 @@
 			isa = PBXGroup;
 			children = (
 				0FE8AB982B47FA1500399CAB /* UseCase */,
-				0FE8ABAC2B48029100399CAB /* Interface */,
+				0FE8ABAC2B48029100399CAB /* Repository */,
 				0FE8AB972B47FA0900399CAB /* Entities */,
 			);
 			path = Domain;
@@ -871,14 +871,6 @@
 			path = UseCase;
 			sourceTree = "<group>";
 		};
-		0FE8AB992B47FA2100399CAB /* Repositories */ = {
-			isa = PBXGroup;
-			children = (
-				0FE8ABAD2B4802C400399CAB /* PlanetaryListInterface.swift */,
-			);
-			path = Repositories;
-			sourceTree = "<group>";
-		};
 		0FE8AB9A2B47FAAA00399CAB /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -931,12 +923,12 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
-		0FE8ABAC2B48029100399CAB /* Interface */ = {
+		0FE8ABAC2B48029100399CAB /* Repository */ = {
 			isa = PBXGroup;
 			children = (
-				0FE8AB992B47FA2100399CAB /* Repositories */,
+				0FE8ABAD2B4802C400399CAB /* PlanetaryListInterface.swift */,
 			);
-			path = Interface;
+			path = Repository;
 			sourceTree = "<group>";
 		};
 		0FE8ABB92B48061D00399CAB /* APIRequest */ = {

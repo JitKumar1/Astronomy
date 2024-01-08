@@ -9,7 +9,6 @@ import XCTest
 
 final class PlanetaryListViewModelTests: AstronomyTestCase {
 
-    @MainActor 
     func testPlanetaryListViewModelSuccess() throws {
         let expectation = expectation(description: "PlanetaryListViewModel With Success")
         let useCase = PlanetaryListUseCase(repository: PlanetaryListRepository(service: MockPlanetaryListService()))
@@ -31,7 +30,6 @@ final class PlanetaryListViewModelTests: AstronomyTestCase {
         
     }
     
-    @MainActor 
     func testPlanetaryListViewModelFailure() throws {
         let expectation = expectation(description: "PlanetaryListViewModel With Success")
         let service = MockPlanetaryListErrorService()

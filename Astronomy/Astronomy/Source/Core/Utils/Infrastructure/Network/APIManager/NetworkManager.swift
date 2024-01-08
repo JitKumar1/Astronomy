@@ -31,7 +31,7 @@ final class NetworkManager {
 
 }
 
-extension NetworkManager : NetworkManagerInterface {
+extension NetworkManager : NetworkManagerProtocol {
     
     func perform<T: Codable, Request: APIRequest>(request: Request, _ model: T.Type) -> Promise<T> {
         return Promise { seal in

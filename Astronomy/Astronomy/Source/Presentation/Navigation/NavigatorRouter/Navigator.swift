@@ -29,12 +29,19 @@ enum Route: Routable {
 protocol Navigator: ObservableObject {
     associatedtype RoutePage: Routable
     
+    /// the navigation global Path
     var path: NavigationPath { get set }
     
+    /// 
+    ///  push the screen specified the Router Page
+    /// - Parameter page: the router page name
+    ///
     func push(_ page: RoutePage)
     
+    /// pop to current screen
     func pop()
     
+    /// pop to root Screen
     func popToRoot()
     
 }

@@ -8,14 +8,14 @@
 import Foundation
 import PromiseKit
 
-protocol PlanetaryListUseCaseInterface {
+protocol PlanetaryListUseCaseProtocol {
     func fetchPlanetaryList() -> Promise<[PlanetaryDomainModel]>
 }
 
-final class PlanetaryListUseCase: PlanetaryListUseCaseInterface {
+final class PlanetaryListUseCase: PlanetaryListUseCaseProtocol {
     
     /// planetary list data repository
-    var repository: PlanetaryListInterface
+    var repository: PlanetaryListRepositoryProtocol
     
     //MARK: - Instance
     
@@ -23,7 +23,7 @@ final class PlanetaryListUseCase: PlanetaryListUseCaseInterface {
     /// Create Planetary list user case specified the planetary list data repository
     /// - Parameter repository:  the planetary list data repository
     ///
-    init(repository: PlanetaryListInterface) {
+    init(repository: PlanetaryListRepositoryProtocol) {
         self.repository = repository
     }
     

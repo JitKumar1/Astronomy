@@ -1,5 +1,5 @@
 //
-//  NetworkManagerInterface.swift
+//  NetworkManagerProtocol.swift
 //  Astronomy
 //
 //  Created by Jitendra Kumar on 05/01/24.
@@ -8,7 +8,7 @@
 import Foundation
 import PromiseKit
 
-protocol NetworkManagerInterface {
+protocol NetworkManagerProtocol {
     
     ///
     ///  perform  Raw task request

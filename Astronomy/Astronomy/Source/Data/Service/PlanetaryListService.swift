@@ -8,12 +8,12 @@
 import Foundation
 import PromiseKit
 
-final class PlanetaryListService: PlanetaryListServiceInterface {
+final class PlanetaryListService: PlanetaryListServiceProtocol {
     
     //MARK: - Properties
     
     /// the nework session manager
-    var manager: NetworkManagerInterface
+    var manager: NetworkManagerProtocol
     
     /// the service Reqeust
     var request: APIRequest
@@ -24,7 +24,7 @@ final class PlanetaryListService: PlanetaryListServiceInterface {
     ///   - reqeust: The planetary list Reqeust
     ///   - manager:  the Planetary list  service Manager
     ///
-    init(reqeust: APIRequest, _ manager: NetworkManagerInterface) {
+    init(reqeust: APIRequest, _ manager: NetworkManagerProtocol) {
         self.manager = manager
         self.request = reqeust
     }

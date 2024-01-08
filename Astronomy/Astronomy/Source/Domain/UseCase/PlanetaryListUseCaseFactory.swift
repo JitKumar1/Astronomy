@@ -9,7 +9,7 @@ import Foundation
 
 enum PlanetaryListUseCaseFactory {
     
-    static func createUseCase() -> PlanetaryListUseCaseInterface {
+    static func createUseCase() -> PlanetaryListUseCaseProtocol {
         let repo = PlanetaryListRepositoryFactory.createRepository()
         return PlanetaryListUseCase(repository: repo)
     }

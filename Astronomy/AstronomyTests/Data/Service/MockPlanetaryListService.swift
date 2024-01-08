@@ -8,14 +8,14 @@
 import Foundation
 import PromiseKit
 
-final class MockPlanetaryListService: PlanetaryListServiceInterface {
+final class MockPlanetaryListService: PlanetaryListServiceProtocol {
     
     func fetchPlanetaryList() -> Promise<[PlanetaryDataModel]> {
         Bundle.decoder([PlanetaryDataModel].self, forResource: "Planetaries")
     }
 }
 
-final class MockPlanetaryListErrorService: PlanetaryListServiceInterface {
+final class MockPlanetaryListErrorService: PlanetaryListServiceProtocol {
     func fetchPlanetaryList() -> Promise<[PlanetaryDataModel]> {
         Bundle.decoder([PlanetaryDataModel].self, forResource: "Planetary")
     }

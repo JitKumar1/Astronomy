@@ -8,16 +8,16 @@
 import Foundation
 import PromiseKit
 
-final class PlanetaryListRepository: PlanetaryListInterface {
+final class PlanetaryListRepository: PlanetaryListRepositoryProtocol {
     
     /// the Planetary List Service
-    var service: PlanetaryListServiceInterface
+    var service: PlanetaryListServiceProtocol
     
     ///
     /// Create Planetary List Data Provider Service specified the Planetary List Service
     /// - Parameter service: planetary List Service
     ///
-    init(service: PlanetaryListServiceInterface) {
+    init(service: PlanetaryListServiceProtocol) {
         self.service = service
     }
     

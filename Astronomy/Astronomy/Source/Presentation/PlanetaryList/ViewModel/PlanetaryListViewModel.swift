@@ -21,7 +21,7 @@ final class PlanetaryListViewModel: ObservableObject {
     @Published var errorMessage: String = ""
     
     /// the Planetary list Data User case
-    let useCase: PlanetaryListUseCaseInterface
+    let useCase: PlanetaryListUseCaseProtocol
     
     // MARK: - Instance
     
@@ -29,7 +29,7 @@ final class PlanetaryListViewModel: ObservableObject {
     /// Create  a Planetary View Model specified the Planetary List Use Case
     /// - Parameter useCase: the Planetary Data Use case
     ///
-    init(useCase: PlanetaryListUseCaseInterface) {
+    init(useCase: PlanetaryListUseCaseProtocol) {
         self.useCase = useCase
     }
     

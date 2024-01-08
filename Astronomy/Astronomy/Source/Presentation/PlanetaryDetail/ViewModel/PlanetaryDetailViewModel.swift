@@ -12,40 +12,50 @@ final class PlanetaryDetailViewModel: ObservableObject {
     
     // MARK: - Propeties
     
-    /// A Planetary Title
-    @Published var title: String
-    
-    /// A Planetary Description
-    @Published  var explanation: String
-    
-    /// The date of the APOD image to retrieve
-    @Published  var date: Date
-    
-    /// A Planetary HD Image URL
-    @Published  var hdMediaURL: URL?
-    
-    /// A Planetary  Image  / video URL
-    @Published  var mediaURL: URL?
-    
-    /// A Planetary  Media Type
-    @Published  var mediaType: MediaType
-    
-    /// A Planetary  Detail User  Case
-    let useCase: PlanetaryDetailUseCaseInterface
+    /// the planetary domain model
+    @Published var planetary: PlanetaryDomainModel
     
     //MARK: - Instance
     
     ///
-    /// Create Planetary Detail View Model specified the Planetary Detail User Case
-    /// - Parameter useCase:  the Planetary Detail User Case
+    /// Create Planetary Detail View Model specified the Planetary Domain Model
+    /// - Parameter model:  the Planetary domain model
     ///
-    init(useCase: PlanetaryDetailUseCaseInterface) {
-        self.useCase = useCase
-        self.title = useCase.repository.title
-        self.explanation = useCase.repository.explanation
-        self.date = useCase.repository.date
-        self.hdMediaURL = useCase.repository.hdMediaURL
-        self.mediaURL = useCase.repository.mediaURL
-        self.mediaType = useCase.repository.mediaType
+    init(_ model: PlanetaryDomainModel) {
+        planetary = model
     }
+}
+
+extension PlanetaryDetailViewModel {
+    
+    /// A Planetary Title
+    var title: String {
+        planetary.title
+    }
+    
+    /// A Planetary Description
+    var explanation: String {
+        planetary.explanation
+    }
+    
+    /// The date of the APOD image to retrieve
+    var date: Date {
+        planetary.date
+    }
+    
+    /// A Planetary HD Image URL
+    var hdMediaURL: URL? {
+        planetary.hdMediaURL
+    }
+    
+    /// A Planetary  Image  / video URL
+    var mediaURL: URL? {
+        planetary.mediaURL
+    }
+    
+    /// A Planetary  Media Type
+    var mediaType: MediaType {
+        planetary.mediaType
+    }
+    
 }

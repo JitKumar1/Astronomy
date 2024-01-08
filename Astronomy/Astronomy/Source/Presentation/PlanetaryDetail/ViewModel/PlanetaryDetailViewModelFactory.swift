@@ -9,9 +9,8 @@ import Foundation
 
 enum PlanetaryDetailViewModelFactory {
   
-    static func createViewModel(_ planetary: PlanetaryDomainModelInterface) -> PlanetaryDetailViewModel {
-        let useCase = PlanetaryDetailUseCaseFactory.createUseCase(planetary)
-        let viewModel = PlanetaryDetailViewModel(useCase: useCase)
+    static func createViewModel(_ planetary: PlanetaryDomainModel) -> PlanetaryDetailViewModel {
+        let viewModel = PlanetaryDetailViewModel(planetary)
         return viewModel
     }
 }

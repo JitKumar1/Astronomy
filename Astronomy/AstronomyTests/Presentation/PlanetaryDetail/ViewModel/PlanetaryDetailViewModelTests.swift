@@ -13,16 +13,9 @@ final class PlanetaryDetailViewModelTests: AstronomyTestCase {
         let rawMediaType = try XCTUnwrap(MediaType.allCases.randomElement())
         let theRawData = PlanetaryDataModel.mockData(mediaType: rawMediaType)
         let theRawDomainModel = PlanetaryDomainModel.mockData(theRawData)
-        let useCase = PlanetaryDetailUseCase(repository: theRawDomainModel)
-        let viewModel = PlanetaryDetailViewModel(useCase: useCase)
+        let viewModel = PlanetaryDetailViewModel(theRawDomainModel)
         
-        XCTAssertEqual(viewModel.useCase.repository.title, useCase.repository.title, "title")
-        XCTAssertEqual(viewModel.useCase.repository.explanation, useCase.repository.explanation, "explanation")
-        XCTAssertEqual(viewModel.useCase.repository.date, useCase.repository.date, "date")
-        XCTAssertEqual(viewModel.useCase.repository.hdMediaURL, useCase.repository.hdMediaURL, "hdMediaURL")
-        XCTAssertEqual(viewModel.useCase.repository.mediaURL, useCase.repository.mediaURL, "mediaURL")
-        XCTAssertEqual(viewModel.useCase.repository.mediaType, useCase.repository.mediaType, "mediaURL")
-        
+        XCTAssertEqual(viewModel.planetary, theRawDomainModel, "Planetary Domain Model")
         XCTAssertEqual(viewModel.title, theRawDomainModel.title, "PlanetaryDomainModel title")
         XCTAssertEqual(viewModel.explanation, theRawDomainModel.explanation, "PlanetaryDomainModel explanation")
         XCTAssertEqual(viewModel.date, theRawDomainModel.date, "PlanetaryDomainModel date")
@@ -33,17 +26,8 @@ final class PlanetaryDetailViewModelTests: AstronomyTestCase {
     }
     func testDetailViewModelWithEmptyOrNilAttributeData() throws {
         let theRawDomainModel = PlanetaryDomainModel.mockEmptyData()
-        let useCase = PlanetaryDetailUseCase(repository: theRawDomainModel)
-        
-        let viewModel = PlanetaryDetailViewModel(useCase: useCase)
-        
-        XCTAssertEqual(viewModel.useCase.repository.title, useCase.repository.title, "title")
-        XCTAssertEqual(viewModel.useCase.repository.explanation, useCase.repository.explanation, "explanation")
-        XCTAssertEqual(viewModel.useCase.repository.date, useCase.repository.date, "date")
-        XCTAssertEqual(viewModel.useCase.repository.hdMediaURL, useCase.repository.hdMediaURL, "hdMediaURL")
-        XCTAssertEqual(viewModel.useCase.repository.mediaURL, useCase.repository.mediaURL, "mediaURL")
-        XCTAssertEqual(viewModel.useCase.repository.mediaType, useCase.repository.mediaType, "mediaURL")
-        
+        let viewModel = PlanetaryDetailViewModel(theRawDomainModel)
+        XCTAssertEqual(viewModel.planetary, theRawDomainModel, "Planetary Domain Model")
         XCTAssertEqual(viewModel.title, theRawDomainModel.title, "PlanetaryDomainModel title")
         XCTAssertEqual(viewModel.explanation, theRawDomainModel.explanation, "PlanetaryDomainModel explanation")
         XCTAssertEqual(viewModel.date, theRawDomainModel.date, "PlanetaryDomainModel date")

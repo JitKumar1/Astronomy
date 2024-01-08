@@ -9,13 +9,13 @@ import Foundation
 
 enum PlanetaryListRepositoryFactory {
     
-    static func createRepository() -> PlanetaryListInterface {
+    static func createRepository() -> PlanetaryListRepositoryProtocol {
         PlanetaryListRepository(service: createService())
     }
     
-    static func createService() -> PlanetaryListServiceInterface {
+    static func createService() -> PlanetaryListServiceProtocol {
         if UITestingHelper.isTestingOnly {
-            return  MockPlanetaryListService()
+            return MockPlanetaryListService()
         } else {
             let sessionManager = NetworkFactory.createtNetworkManager()
             let startDate = Date.today.date(daysFromToday:30) ~ .fullDateOnly

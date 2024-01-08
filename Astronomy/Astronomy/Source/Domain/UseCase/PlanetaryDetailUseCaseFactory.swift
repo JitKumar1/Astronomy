@@ -9,7 +9,7 @@ import Foundation
 
 final class PlanetaryDetailUseCaseFactory {
     
-    static func createUseCase(_ plentary: PlanetaryDomainModelInterface) -> PlanetaryDetailUseCaseInterface {
-        PlanetaryDetailUseCase(repository: plentary)
+    static func createUseCase(_ planetary: PlanetaryDomainModelInterface) -> PlanetaryDetailUseCaseInterface {
+        PlanetaryDetailUseCase(repository: planetary)
     }
 }

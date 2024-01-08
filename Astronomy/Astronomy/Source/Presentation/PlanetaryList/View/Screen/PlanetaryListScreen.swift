@@ -14,16 +14,13 @@ struct PlanetaryListScreen: View {
     /// Planetary List ViewModel
     @StateObject private var viewModel: PlanetaryListViewModel
     
-    /// Gloabel Navigation Router
+    /// Global Navigation Router
     @Environment(\.navigate) private var navigate: Navigation
-    
-    /// the network monitoring  model
-    // @StateObject private var networkMonitor = NetworkMonitor.shared
-    
+        
     // MARK: - Instance
     
-    init(useCase: PlanetaryListUseCaseInterface) {
-        _viewModel = StateObject(wrappedValue: PlanetaryListViewModel(useCase: PlanetaryListUseCaseFactory.createUseCase()))
+    init(viewModel: PlanetaryListViewModel) {
+        _viewModel = StateObject(wrappedValue: viewModel)
     }
     
     var body: some View {
@@ -76,5 +73,5 @@ struct PlanetaryListScreen: View {
 }
 
 #Preview {
-    PlanetaryListScreen(useCase: PlanetaryListUseCaseFactory.createUseCase())
+    PlanetaryListScreen(viewModel: PlanetaryListViewModelFactory.createViewModel())
 }

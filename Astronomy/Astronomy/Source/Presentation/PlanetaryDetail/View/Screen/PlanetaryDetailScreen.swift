@@ -9,11 +9,14 @@ import SDWebImageSwiftUI
 import SwiftUI
 
 struct PlanetaryDetailScreen: View {
+    
     /// the detail view model
     @StateObject private var detailViewModel: PlanetaryDetailViewModel
     
-    init(useCase: PlanetaryDetailUseCaseInterface) {
-        _detailViewModel = StateObject(wrappedValue: PlanetaryDetailViewModel(useCase: useCase))
+    // MARK: - Instance
+    
+    init(viewModel: PlanetaryDetailViewModel) {
+        _detailViewModel = StateObject(wrappedValue: viewModel)
     }
     
     var body: some View {
@@ -90,6 +93,9 @@ struct PlanetaryDetailScreen: View {
     }
 }
 
+/*
 #Preview {
-    PlanetaryDetailScreen(useCase: PlanetaryDetailUseCaseFactory.createUseCase(PlanetaryDomainModel.mockData(mediaType: .image)))
+    
+    PlanetaryDetailScreen(viewModel: PlanetaryDetailViewModelFactory.createViewModel(PlanetaryDomainModel.mockData(mediaType: .image)))
 }
+*/

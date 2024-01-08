@@ -25,10 +25,9 @@ struct NavigationScreen: View {
     private func build(page: Route) -> some View {
         switch page {
         case .planetaryList:
-            PlanetaryListScreen(useCase: PlanetaryListUseCaseFactory.createUseCase())
-            
+            PlanetaryListScreen(viewModel: PlanetaryListViewModelFactory.createViewModel())
         case .planetaryDetail(let planetary):
-            PlanetaryDetailScreen(useCase: PlanetaryDetailUseCaseFactory.createUseCase(planetary))
+            PlanetaryDetailScreen(viewModel: PlanetaryDetailViewModelFactory.createViewModel(planetary))
         }
     }
 }

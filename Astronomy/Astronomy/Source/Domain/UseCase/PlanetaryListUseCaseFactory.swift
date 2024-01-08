@@ -7,8 +7,7 @@
 
 import Foundation
 
-
-final class PlanetaryListUseCaseFactory {
+enum PlanetaryListUseCaseFactory {
     
     static func createUseCase() -> PlanetaryListUseCaseInterface {
         let repo = PlanetaryListRepositoryFactory.createRepository()

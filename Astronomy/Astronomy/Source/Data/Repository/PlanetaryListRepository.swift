@@ -26,10 +26,9 @@ final class PlanetaryListRepository: PlanetaryListInterface {
     /// - Returns: A List of Planetary If request sucess other wise throws exception error
     ///
     func fetchPlanetaryList() -> Promise<[PlanetaryDomainModel]> {
-        let mapper = PlanetaryListMapper()
         return service
             .fetchPlanetaryList()
-            .map {mapper.toDomain($0)}
+            .map {PlanetaryListMapper.toDomain($0)}
     }
     
 }

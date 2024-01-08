@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class PlanetaryListRepositoryFactory {
+enum PlanetaryListRepositoryFactory {
     
     static func createRepository() -> PlanetaryListInterface {
         PlanetaryListRepository(service: createService())

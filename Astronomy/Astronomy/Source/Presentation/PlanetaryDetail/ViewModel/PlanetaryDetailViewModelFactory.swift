@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class PlanetaryDetailViewModelFactory {
+enum PlanetaryDetailViewModelFactory {
   
     static func createViewModel(_ planetary: PlanetaryDomainModelInterface) -> PlanetaryDetailViewModel {
         let useCase = PlanetaryDetailUseCaseFactory.createUseCase(planetary)

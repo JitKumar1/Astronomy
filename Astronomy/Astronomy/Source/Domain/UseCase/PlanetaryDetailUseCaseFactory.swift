@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class PlanetaryDetailUseCaseFactory {
+enum PlanetaryDetailUseCaseFactory {
     
     static func createUseCase(_ planetary: PlanetaryDomainModelInterface) -> PlanetaryDetailUseCaseInterface {
         PlanetaryDetailUseCase(repository: planetary)

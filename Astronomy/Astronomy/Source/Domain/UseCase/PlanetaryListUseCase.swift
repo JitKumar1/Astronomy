@@ -14,8 +14,15 @@ protocol PlanetaryListUseCaseInterface {
 
 final class PlanetaryListUseCase: PlanetaryListUseCaseInterface {
     
+    /// planetary list data repository
     var repository: PlanetaryListInterface
     
+    //MARK: - Instance
+    
+    ///
+    /// Create Planetary list user case specified the planetary list data repository
+    /// - Parameter repository:  the planetary list data repository
+    ///
     init(repository: PlanetaryListInterface) {
         self.repository = repository
     }

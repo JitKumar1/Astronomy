@@ -9,7 +9,6 @@ import Foundation
 
 final class PlanetaryListViewModelFactory {
     
-    @MainActor
     static func createViewModel() -> PlanetaryListViewModel {
         let useCase = PlanetaryListUseCaseFactory.createUseCase()
         let viewModel =  PlanetaryListViewModel(useCase: useCase)

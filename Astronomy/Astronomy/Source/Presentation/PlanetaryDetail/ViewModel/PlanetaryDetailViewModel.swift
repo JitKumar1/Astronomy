@@ -10,8 +10,10 @@ import Foundation
 
 final class PlanetaryDetailViewModel: ObservableObject {
     
+    // MARK: - Propeties
+    
     /// A Planetary Title
-  @Published var title: String
+    @Published var title: String
     
     /// A Planetary Description
     @Published  var explanation: String
@@ -28,15 +30,22 @@ final class PlanetaryDetailViewModel: ObservableObject {
     /// A Planetary  Media Type
     @Published  var mediaType: MediaType
     
+    /// A Planetary  Detail User  Case
     let useCase: PlanetaryDetailUseCaseInterface
     
+    //MARK: - Instance
+    
+    ///
+    /// Create Planetary Detail View Model specified the Planetary Detail User Case
+    /// - Parameter useCase:  the Planetary Detail User Case
+    ///
     init(useCase: PlanetaryDetailUseCaseInterface) {
-        self.title = useCase.dataRepository.title
-        self.explanation = useCase.dataRepository.explanation
-        self.date = useCase.dataRepository.date
-        self.hdMediaURL = useCase.dataRepository.hdMediaURL
-        self.mediaURL = useCase.dataRepository.mediaURL
-        self.mediaType = useCase.dataRepository.mediaType
         self.useCase = useCase
+        self.title = useCase.repository.title
+        self.explanation = useCase.repository.explanation
+        self.date = useCase.repository.date
+        self.hdMediaURL = useCase.repository.hdMediaURL
+        self.mediaURL = useCase.repository.mediaURL
+        self.mediaType = useCase.repository.mediaType
     }
 }

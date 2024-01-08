@@ -8,6 +8,7 @@
 import Foundation
 
 protocol PlanetaryDomainModelInterface {
+    
     /// A Planetary Title
     var title: String { get set }
     

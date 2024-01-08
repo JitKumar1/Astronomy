@@ -36,8 +36,6 @@
 		0F2570DE2B485E2F000CD8B6 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2570DC2B485E2F000CD8B6 /* DataModel.swift */; };
 		0F2570E02B485ED0000CD8B6 /* DomainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2570DF2B485ED0000CD8B6 /* DomainModel.swift */; };
 		0F2570E12B485ED0000CD8B6 /* DomainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2570DF2B485ED0000CD8B6 /* DomainModel.swift */; };
-		0F2570E32B48675D000CD8B6 /* PlanetaryDetailInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2570E22B48675D000CD8B6 /* PlanetaryDetailInterface.swift */; };
-		0F2570E42B48675D000CD8B6 /* PlanetaryDetailInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2570E22B48675D000CD8B6 /* PlanetaryDetailInterface.swift */; };
 		0F2570E62B486E7D000CD8B6 /* NavigationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2570E52B486E7D000CD8B6 /* NavigationUITests.swift */; };
 		0F2570E82B486EBD000CD8B6 /* PlanetaryListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2570E72B486EBD000CD8B6 /* PlanetaryListUITests.swift */; };
 		0F2570EA2B486F1D000CD8B6 /* PlanetaryDetailUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2570E92B486F1D000CD8B6 /* PlanetaryDetailUITests.swift */; };
@@ -168,7 +166,6 @@
 		0F2570D92B485C81000CD8B6 /* PlanetaryDetailUseCaseFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetaryDetailUseCaseFactory.swift; sourceTree = "<group>"; };
 		0F2570DC2B485E2F000CD8B6 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		0F2570DF2B485ED0000CD8B6 /* DomainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainModel.swift; sourceTree = "<group>"; };
-		0F2570E22B48675D000CD8B6 /* PlanetaryDetailInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetaryDetailInterface.swift; sourceTree = "<group>"; };
 		0F2570E52B486E7D000CD8B6 /* NavigationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationUITests.swift; sourceTree = "<group>"; };
 		0F2570E72B486EBD000CD8B6 /* PlanetaryListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetaryListUITests.swift; sourceTree = "<group>"; };
 		0F2570E92B486F1D000CD8B6 /* PlanetaryDetailUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetaryDetailUITests.swift; sourceTree = "<group>"; };
@@ -875,7 +872,6 @@
 			isa = PBXGroup;
 			children = (
 				0FE8ABAD2B4802C400399CAB /* PlanetaryListInterface.swift */,
-				0F2570E22B48675D000CD8B6 /* PlanetaryDetailInterface.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -1210,7 +1206,6 @@
 				0FE8AB922B47F4EF00399CAB /* UITestingHelper.swift in Sources */,
 				0FE8ABE52B480A7200399CAB /* HTTPMIMEType.swift in Sources */,
 				0FE8AC082B48181900399CAB /* PlanetaryListService.swift in Sources */,
-				0F2570E32B48675D000CD8B6 /* PlanetaryDetailInterface.swift in Sources */,
 				0FE8AB832B47F29D00399CAB /* SwiftUIWebView.swift in Sources */,
 				0F2571252B489520000CD8B6 /* MockPlanetaryDataModel.swift in Sources */,
 				0F2570DA2B485C81000CD8B6 /* PlanetaryDetailUseCaseFactory.swift in Sources */,
@@ -1284,7 +1279,6 @@
 				0F2570D82B484FA4000CD8B6 /* PlanetaryMapper.swift in Sources */,
 				0F25710A2B488A79000CD8B6 /* MockDataModel.swift in Sources */,
 				0F2571152B48930F000CD8B6 /* MockURLErrorData.swift in Sources */,
-				0F2570E42B48675D000CD8B6 /* PlanetaryDetailInterface.swift in Sources */,
 				0F2570DB2B485C81000CD8B6 /* PlanetaryDetailUseCaseFactory.swift in Sources */,
 				0F25713F2B48A0C6000CD8B6 /* NavigatorTests.swift in Sources */,
 				0F2570DE2B485E2F000CD8B6 /* DataModel.swift in Sources */,

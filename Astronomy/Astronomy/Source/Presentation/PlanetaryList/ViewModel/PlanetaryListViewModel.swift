@@ -8,9 +8,7 @@
 import Combine
 import Foundation
 
-@MainActor
 final class PlanetaryListViewModel: ObservableObject {
-    
     
     //MARK: - Properties
     
@@ -24,7 +22,6 @@ final class PlanetaryListViewModel: ObservableObject {
     
     /// the Planetary list Data User case
     let useCase: PlanetaryListUseCaseInterface
-    
     
     // MARK: - Instance
     

@@ -9,14 +9,15 @@ import Foundation
 
 protocol PlanetaryDetailUseCaseInterface {
     
-    var dataRepository: PlanetaryDomainModelInterface { get set }
+    var repository: PlanetaryDomainModelInterface { get set }
 }
+
 final class PlanetaryDetailUseCase: PlanetaryDetailUseCaseInterface {
     
-    var dataRepository: PlanetaryDomainModelInterface
+    var repository: PlanetaryDomainModelInterface
     
     init(repository: PlanetaryDomainModelInterface) {
-        self.dataRepository = repository
+        self.repository = repository
     }
     
 }

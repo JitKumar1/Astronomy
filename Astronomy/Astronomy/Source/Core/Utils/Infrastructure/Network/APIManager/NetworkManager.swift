@@ -18,9 +18,6 @@ final class NetworkManager {
         return URLSession(configuration: configuration)
     }()
     
-    /// the Network manger shared instance
-    static let shared = NetworkManager()
-    
     // MARK: - Initialization
 
     ///

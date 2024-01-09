@@ -7,6 +7,8 @@
 
 import Foundation
 
+typealias APIQueryItems = [APIQueryItem]
+
 struct APIQueryItem: Hashable {
     
     //MARK: -  Properties
@@ -31,7 +33,7 @@ struct APIQueryItem: Hashable {
     ///
     /// Whether or not the parameter has been assigned to a placeholder.
     ///
-    var isAssignedToPlaceholder : Bool
+    var isPlaceholder : Bool
     
     ///
     /// Obtains a string representing a placeholder for this `APIQueryItem`.
@@ -59,21 +61,9 @@ struct APIQueryItem: Hashable {
     ///
     init(name aName: String,
          value aValue: String,
-         isAssignedToPlaceholder isAssigned : Bool = false) {
+         isPlaceholder isAssigned : Bool = false) {
         name = aName
         internalValue = aValue
-        isAssignedToPlaceholder = isAssigned
-    }
-}
-
-typealias APIQueryItems = [APIQueryItem]
-
-extension APIQueryItems {
-    
-    ///
-    /// no Query Parameter
-    ///
-    static var noQueryItems: APIQueryItems {
-        return []
+        isPlaceholder = isAssigned
     }
 }

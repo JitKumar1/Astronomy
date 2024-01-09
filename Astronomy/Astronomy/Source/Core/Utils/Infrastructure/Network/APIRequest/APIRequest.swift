@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import PromiseKit
 
 protocol APIRequest {
  
@@ -17,17 +18,17 @@ protocol APIRequest {
     ///
     /// The request's API Endpoint.
     ///
-    var endpoint : Endpoint { get }
+    var endpoint: Endpoint { get }
 
     ///
     /// the Request parameters: [APIQueryItems]
     ///
-    var parameters : APIQueryItems { get }
+    var parameters: APIQueryItems { get }
     
     ///
     /// The request's content Type `default` `JSON`
     ///
-    var mimeType : HTTPMIMEType { get }
+    var mimeType: HTTPMIMEType { get }
     
     ///
     /// The request's additional Header
@@ -36,33 +37,19 @@ protocol APIRequest {
 }
 
 extension APIRequest {
-
-    ///
-    /// The request's HTTP Method `default = GET`
-    ///
-    var method: HTTPMethod {
-        .get
-    }
     
     ///
     /// the default mimetype `HTTPMIMEType = .json`
     ///
-    var mimeType : HTTPMIMEType {
+    var mimeType: HTTPMIMEType {
         .json
     }
     
     ///
-    /// the obtains request  Headers  `HTTPHeaders = default  +  additional headers`
+    /// the obtains request  Headers
     ///
     var headers: HTTPHeaders {
          HTTPHeaders(arrayLiteral: .accept(mimeType: mimeType), .contentType(mimeType))
-    }
-    
-    ///
-    /// the Request parameters: [APIQueryItems] `noQueryParameters`
-    ///
-    var parameters : APIQueryItems {
-        .noQueryItems
     }
 }
 

@@ -24,7 +24,7 @@ final class PlanetaryListRequest: APIRequest {
    ///
    /// Return the URL of video thumbnail. If an APOD is not a video, this parameter is ignored.
    ///
-    var isThumb:Bool
+    var isThumb: Bool
    
    ///
    /// the request api endpoint

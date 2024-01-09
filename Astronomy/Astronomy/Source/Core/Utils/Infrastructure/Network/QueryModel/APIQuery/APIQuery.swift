@@ -36,7 +36,6 @@ struct APIQuery: Hashable {
     ///
     var scheme: String = urlScheme
     
-    
     //MARK: - Instance
     
     ///
@@ -44,27 +43,23 @@ struct APIQuery: Hashable {
     /// - Parameters:
     ///   - aHost: the host name of URL
     ///   - aPath: the Request path of url
-    ///   - anAdditional: the additional Path of URL
     ///
     init(host aHost: String,
          path aPath: String,
-         scheme aScheme : String = urlScheme,
-         additionalPath anAdditional: String = "") {
+         scheme aScheme : String = urlScheme) {
         host = aHost.trimmingCharacters(in: .whitespacesAndNewlines)
-        path = (anAdditional.isEmpty ? aPath : aPath + anAdditional).trimmingCharacters(in: .whitespacesAndNewlines)
+        path = aPath.trimmingCharacters(in: .whitespacesAndNewlines)
     }
 
     ///
     /// the create `APIQuery`
     /// - Parameters:
     ///   - endpoint: the Endpoint of URL
-    ///   - anAdditional: the additional Path of URL
     ///
-    init<Endpoint: APIEndpoint>(endpoint: Endpoint,
-                                additionalPath anAdditional: String = "") {
+    init<Endpoint: APIEndpoint>(endpoint: Endpoint) {
         let hostType: String = endpoint.host
         let path: String = endpoint.path
-        self.init(host: hostType, path: path, additionalPath: anAdditional)
+        self.init(host: hostType, path: path)
     }
 }
 
@@ -87,8 +82,8 @@ extension APIQuery {
     ///
     func url(parameters aParameters: APIQueryItems) -> URL? {
         var theNormalizedPath = path
-        var theAPIQueryItem = [APIQueryItem]()
-        let theNonConsumedParameters = aParameters.filter { !$0.isAssignedToPlaceholder }
+        var theAPIQueryItem: [APIQueryItem] = []
+        let theNonConsumedParameters = aParameters.filter { !$0.isPlaceholder }
         for theParameter in theNonConsumedParameters {
             let thePlaceholder = theParameter.placeholder
             

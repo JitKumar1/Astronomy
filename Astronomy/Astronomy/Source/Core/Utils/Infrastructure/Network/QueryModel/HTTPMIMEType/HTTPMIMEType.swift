@@ -21,8 +21,6 @@ extension HTTPMIMEType {
     /// Indicates the JSON MIME type.
     static let json = HTTPMIMEType(rawValue: 1 << 0)
   
-    
-    
     /// The format required for the HTTP header Mime type value
     var value: String {
         var mimes:[String] = []

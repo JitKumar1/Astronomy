@@ -10,10 +10,8 @@ import Foundation
 
 struct Endpoint: APIEndpoint, Hashable {
     
-    //MARK: - Properties
-    
+    /// the endpoint key name to optain query path from Endpoints plist
     let key: String
-    
 }
 
 extension Endpoint {
@@ -26,7 +24,7 @@ extension Endpoint {
         "/\(Bundle.main.path(key:key))"
     }
     
-    func append(parameters theParameters: APIQueryItems = .noQueryItems) -> APIQueryItems {
+    func append(parameters theParameters: APIQueryItems = []) -> APIQueryItems {
         var parameters = APIQueryItems(arrayLiteral: APIQueryItem(name: "api_key", value: "5LquIng3MJwMKoodIStkbl18Ba2ZUusx4wE9P5xo"))
         if theParameters.count > 0 {
             parameters.append(contentsOf: theParameters)
@@ -37,5 +35,6 @@ extension Endpoint {
 
 extension Endpoint {
     
+    /// the Planetary list end point
     static let planetaryList = Endpoint(key: "planetaryList")
 }

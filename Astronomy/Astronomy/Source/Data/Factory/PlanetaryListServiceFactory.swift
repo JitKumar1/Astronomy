@@ -16,7 +16,7 @@ enum PlanetaryListServiceFactory {
             let startDate = Date.today.date(daysFromToday:30) ~ .fullDateOnly
             let endDate =  Date.today.date(daysFromToday:1) ~ .fullDateOnly
             let request = PlanetaryListRequest(startDate: startDate, endDate: endDate, isThumb: true)
-            return PlanetaryListService(serviceManager: NetworkFactory.manager, reqeust: request)
+            return PlanetaryListService(NetworkFactory.manager, reqeust: request)
         }
     }
 }

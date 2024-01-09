@@ -21,11 +21,11 @@ final class PlanetaryListService: PlanetaryListServiceProtocol {
     /// 
     /// Create Planetary List Service
     /// - Parameters:
-    ///   - serviceManager:  the Planetary list  service Manager
+    ///   - manager: the network service Manager
     ///   - reqeust: The planetary list Reqeust
     ///
-    init(serviceManager: NetworkManagerProtocol, reqeust: APIRequest) {
-        self.manager = serviceManager
+    init(_ manager: NetworkManagerProtocol, reqeust: APIRequest) {
+        self.manager = manager
         self.request = reqeust
     }
     

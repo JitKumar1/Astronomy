@@ -7,9 +7,10 @@
 
 import Foundation
 
-final class NetworkFactory {
-   
-    static func createNetworkManager() -> NetworkManagerProtocol {
+enum NetworkFactory {
+    
+    /// create Network manger  instance
+    static var manager: NetworkManagerProtocol = {
         NetworkManager(configuration: .default)
-    }
+    }()
 }

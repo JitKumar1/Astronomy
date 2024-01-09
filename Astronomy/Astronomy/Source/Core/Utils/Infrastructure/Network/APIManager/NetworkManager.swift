@@ -17,9 +17,12 @@ final class NetworkManager {
     private(set) lazy var session: URLSession = {
         return URLSession(configuration: configuration)
     }()
-
-    // MARK: - Initialization
     
+    /// the Network manger shared instance
+    static let shared = NetworkManager()
+    
+    // MARK: - Initialization
+
     ///
     /// Creates a netowk session with the specified session configuration
     /// - Parameters:

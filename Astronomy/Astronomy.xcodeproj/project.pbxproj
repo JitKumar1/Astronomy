@@ -683,7 +683,7 @@
 			children = (
 				0FE8AB982B47FA1500399CAB /* UseCase */,
 				0FE8ABAC2B48029100399CAB /* Repository */,
-				0FE8AB972B47FA0900399CAB /* Entities */,
+				0FE8AB972B47FA0900399CAB /* Entity */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -849,13 +849,13 @@
 			path = Repository;
 			sourceTree = "<group>";
 		};
-		0FE8AB972B47FA0900399CAB /* Entities */ = {
+		0FE8AB972B47FA0900399CAB /* Entity */ = {
 			isa = PBXGroup;
 			children = (
 				0F2570DF2B485ED0000CD8B6 /* DomainModel.swift */,
 				0FE8ABF82B48119600399CAB /* PlanetaryDomainModel.swift */,
 			);
-			path = Entities;
+			path = Entity;
 			sourceTree = "<group>";
 		};
 		0FE8AB982B47FA1500399CAB /* UseCase */ = {

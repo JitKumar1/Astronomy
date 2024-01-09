@@ -27,13 +27,3 @@ extension Navigation {
     }
     
 }
-private struct NavigationEnvironmentKey: EnvironmentKey {
-    static let defaultValue: Navigation = Navigation()
-}
-
-extension EnvironmentValues {
-    var navigate: Navigation {
-        get { self[NavigationEnvironmentKey.self] }
-        set { self[NavigationEnvironmentKey.self] = newValue }
-    }
-}

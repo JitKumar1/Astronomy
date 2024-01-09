@@ -18,7 +18,7 @@ struct NavigationScreen: View {
                 }
         }
         .accessibility(identifier: "RootNavigationView")
-        .environment(\.navigate, navigate)
+        .environmentObject(navigate)
     }
     
     @ViewBuilder

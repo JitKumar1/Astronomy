@@ -15,7 +15,7 @@ struct PlanetaryListScreen: View {
     @StateObject private var viewModel: PlanetaryListViewModel
     
     /// Global Navigation Router
-    @Environment(\.navigate) private var navigate: Navigation
+    @EnvironmentObject private var navigate: Navigation
         
     // MARK: - Instance
     

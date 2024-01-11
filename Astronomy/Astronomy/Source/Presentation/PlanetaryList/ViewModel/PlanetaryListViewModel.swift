@@ -12,16 +12,16 @@ final class PlanetaryListViewModel: ObservableObject {
     
     //MARK: - Properties
     
-   @Published var isLoading: Bool = false
+   @Published private(set) var isLoading: Bool = false
     
     /// the array of Planetary Item
-    @Published var planetaries: [PlanetaryDomainModel] = []
+    @Published private(set) var planetaries: [PlanetaryDomainModel] = []
     
     /// the Planetary Resonse error Message
-    @Published var errorMessage: String = ""
+    @Published private(set) var errorMessage: String = ""
     
     /// the Planetary list Data User case
-    let useCase: PlanetaryListUseCaseProtocol
+   private let useCase: PlanetaryListUseCaseProtocol
     
     // MARK: - Instance
     

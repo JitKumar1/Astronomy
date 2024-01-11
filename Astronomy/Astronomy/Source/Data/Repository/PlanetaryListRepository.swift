@@ -11,7 +11,7 @@ import PromiseKit
 final class PlanetaryListRepository: PlanetaryListRepositoryProtocol {
     
     /// the Planetary List Service
-    var service: PlanetaryListServiceProtocol
+    private(set) var service: PlanetaryListServiceProtocol
     
     ///
     /// Create Planetary List Data Provider Service specified the Planetary List Service

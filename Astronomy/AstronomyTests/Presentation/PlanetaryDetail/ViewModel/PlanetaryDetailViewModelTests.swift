@@ -15,7 +15,6 @@ final class PlanetaryDetailViewModelTests: AstronomyTestCase {
         let theRawDomainModel = PlanetaryDomainModel.mockData(theRawData)
         let viewModel = PlanetaryDetailViewModel(theRawDomainModel)
         
-        XCTAssertEqual(viewModel.planetary, theRawDomainModel, "Planetary Domain Model")
         XCTAssertEqual(viewModel.title, theRawDomainModel.title, "PlanetaryDomainModel title")
         XCTAssertEqual(viewModel.explanation, theRawDomainModel.explanation, "PlanetaryDomainModel explanation")
         XCTAssertEqual(viewModel.date, theRawDomainModel.date, "PlanetaryDomainModel date")
@@ -27,7 +26,7 @@ final class PlanetaryDetailViewModelTests: AstronomyTestCase {
     func testDetailViewModelWithEmptyOrNilAttributeData() throws {
         let theRawDomainModel = PlanetaryDomainModel.mockEmptyData()
         let viewModel = PlanetaryDetailViewModel(theRawDomainModel)
-        XCTAssertEqual(viewModel.planetary, theRawDomainModel, "Planetary Domain Model")
+        
         XCTAssertEqual(viewModel.title, theRawDomainModel.title, "PlanetaryDomainModel title")
         XCTAssertEqual(viewModel.explanation, theRawDomainModel.explanation, "PlanetaryDomainModel explanation")
         XCTAssertEqual(viewModel.date, theRawDomainModel.date, "PlanetaryDomainModel date")

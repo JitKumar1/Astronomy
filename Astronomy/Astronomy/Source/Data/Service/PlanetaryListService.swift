@@ -13,10 +13,10 @@ final class PlanetaryListService: PlanetaryListServiceProtocol {
     //MARK: - Properties
     
     /// the nework session manager
-    var manager: NetworkManagerProtocol
+   private var manager: NetworkManagerProtocol
     
     /// the service Reqeust
-    var request: APIRequest
+    private var request: APIRequest
     
     /// 
     /// Create Planetary List Service

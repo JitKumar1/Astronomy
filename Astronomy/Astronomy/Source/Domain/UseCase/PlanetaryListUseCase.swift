@@ -15,7 +15,7 @@ protocol PlanetaryListUseCaseProtocol {
 final class PlanetaryListUseCase: PlanetaryListUseCaseProtocol {
     
     /// planetary list data repository
-    var repository: PlanetaryListRepositoryProtocol
+   private(set) var repository: PlanetaryListRepositoryProtocol
     
     //MARK: - Instance
     

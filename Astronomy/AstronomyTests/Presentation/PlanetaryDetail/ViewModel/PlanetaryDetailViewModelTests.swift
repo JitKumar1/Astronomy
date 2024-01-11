@@ -13,7 +13,10 @@ final class PlanetaryDetailViewModelTests: AstronomyTestCase {
         let rawMediaType = try XCTUnwrap(MediaType.allCases.randomElement())
         let theRawData = PlanetaryDataModel.mockData(mediaType: rawMediaType)
         let theRawDomainModel = PlanetaryDomainModel.mockData(theRawData)
-        let viewModel = PlanetaryDetailViewModel(theRawDomainModel)
+        let useCase = PlanetaryDetailUserCase(input: theRawDomainModel)
+        let viewModel = PlanetaryDetailViewModel(useCase: useCase)
+        
+        viewModel.fetchPlanetary()
         
         XCTAssertEqual(viewModel.title, theRawDomainModel.title, "PlanetaryDomainModel title")
         XCTAssertEqual(viewModel.explanation, theRawDomainModel.explanation, "PlanetaryDomainModel explanation")
@@ -25,7 +28,9 @@ final class PlanetaryDetailViewModelTests: AstronomyTestCase {
     }
     func testDetailViewModelWithEmptyOrNilAttributeData() throws {
         let theRawDomainModel = PlanetaryDomainModel.mockEmptyData()
-        let viewModel = PlanetaryDetailViewModel(theRawDomainModel)
+        let useCase = PlanetaryDetailUserCase(input: theRawDomainModel)
+        let viewModel = PlanetaryDetailViewModel(useCase: useCase)
+        viewModel.fetchPlanetary()
         
         XCTAssertEqual(viewModel.title, theRawDomainModel.title, "PlanetaryDomainModel title")
         XCTAssertEqual(viewModel.explanation, theRawDomainModel.explanation, "PlanetaryDomainModel explanation")

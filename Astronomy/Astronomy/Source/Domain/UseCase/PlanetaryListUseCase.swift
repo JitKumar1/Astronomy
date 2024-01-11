@@ -9,13 +9,18 @@ import Foundation
 import PromiseKit
 
 protocol PlanetaryListUseCaseProtocol {
+    
+    ///
+    /// Fetch Panetary List Data
+    /// - Returns: A List of Planetary If request sucess other wise throws exception error
+    ///
     func fetchPlanetaryList() -> Promise<[PlanetaryDomainModel]>
 }
 
 final class PlanetaryListUseCase: PlanetaryListUseCaseProtocol {
     
     /// planetary list data repository
-   private(set) var repository: PlanetaryListRepositoryProtocol
+   private var repository: PlanetaryListRepositoryProtocol
     
     //MARK: - Instance
     

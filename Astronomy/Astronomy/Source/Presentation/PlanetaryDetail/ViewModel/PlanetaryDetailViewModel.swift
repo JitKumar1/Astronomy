@@ -10,19 +10,30 @@ import Foundation
 
 final class PlanetaryDetailViewModel: ObservableObject {
     
-    // MARK: - Propeties
+    // MARK: - Properties
     
     /// the planetary domain model
-    @Published var planetary: PlanetaryDomainModel
+    @Published private var planetary: PlanetaryDomainModel?
+    
+    /// the planetary detail use case
+    private var useCase: PlanetaryDetailUserCaseProtocol
     
     //MARK: - Instance
     
     ///
-    /// Create Planetary Detail View Model specified the Planetary Domain Model
-    /// - Parameter model:  the Planetary domain model
+    /// Create planetary detail ViewModel specified the  planetary detail use case
+    /// - Parameter useCase: the planetary detail use case
     ///
-    init(_ model: PlanetaryDomainModel) {
-        planetary = model
+    init(useCase: PlanetaryDetailUserCaseProtocol) {
+        self.useCase = useCase
+    }
+    
+    ///
+    /// Fetch Panetary Detail Data
+    /// - Returns: A Planetary Detail data
+    ///
+    func fetchPlanetary() {
+       planetary = useCase.fetchPlanetary()
     }
 }
 
@@ -30,32 +41,32 @@ extension PlanetaryDetailViewModel {
     
     /// A Planetary Title
     var title: String {
-        planetary.title
+        planetary?.title ?? ""
     }
     
     /// A Planetary Description
     var explanation: String {
-        planetary.explanation
+        planetary?.explanation ?? ""
     }
     
     /// The date of the APOD image to retrieve
     var date: Date {
-        planetary.date
+        planetary?.date ?? .today
     }
     
     /// A Planetary HD Image URL
     var hdMediaURL: URL? {
-        planetary.hdMediaURL
+        planetary?.hdMediaURL
     }
     
     /// A Planetary  Image  / video URL
     var mediaURL: URL? {
-        planetary.mediaURL
+        planetary?.mediaURL
     }
     
     /// A Planetary  Media Type
     var mediaType: MediaType {
-        planetary.mediaType
+        planetary?.mediaType ?? .unknow
     }
     
 }

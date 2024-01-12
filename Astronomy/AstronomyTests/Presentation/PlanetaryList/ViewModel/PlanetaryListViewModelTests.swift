@@ -21,6 +21,7 @@ final class PlanetaryListViewModelTests: AstronomyTestCase {
         wait(for: [expectation], timeout: 10)
         XCTAssertTrue(vieModel.errorMessage.isEmpty, "PlanetaryListViewModel No Error ")
         XCTAssertFalse(vieModel.isEmpty, "PlanetaryDomainModel response")
+
         let planetary = try XCTUnwrap(vieModel.planetaries.first)
         XCTAssertEqual(planetary.title,  "Pick a Galaxy, Any Galaxy", "title")
         XCTAssertEqual(planetary.date ~ .fullDateOnly,  "2002-01-17", "date")

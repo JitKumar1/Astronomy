@@ -15,7 +15,7 @@ final class PlanetaryListViewModel: ObservableObject {
    @Published private(set) var isLoading: Bool = false
     
     /// the array of Planetary Item
-    @Published private(set) var planetaries: [PlanetaryDomainModel] = []
+    @Published private(set) var planetaries: [PlanetaryModel] = []
     
     /// the Planetary Resonse error Message
     @Published private(set) var errorMessage: String = ""
@@ -47,6 +47,7 @@ extension PlanetaryListViewModel {
         isLoading = true
         useCase
             .fetchPlanetaryList()
+            .map {PresentationPlanetaryListMapper.toModel($0)}
             .done{ [weak self] list in
                 self?.planetaries = list
                 self?.errorMessage = ""

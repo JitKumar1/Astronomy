@@ -15,7 +15,7 @@ extension PlanetaryDomainModel {
     /// - returns: A `Planetary` representing a random model.
     ///
     static func mockData(_ dataModel: PlanetaryDataModel) -> PlanetaryDomainModel {
-        PlanetaryMapper.toDomain(dataModel)
+        PlanetaryMapper.toModel(dataModel)
     }
     
     ///
@@ -24,7 +24,7 @@ extension PlanetaryDomainModel {
     /// - returns: A `Planetary` representing a random model.
     ///
     static func mockData(mediaType: MediaType) -> PlanetaryDomainModel {
-        PlanetaryMapper.toDomain(PlanetaryDataModel.mockData(mediaType: mediaType))
+        PlanetaryMapper.toModel(PlanetaryDataModel.mockData(mediaType: mediaType))
     }
     
     ///
@@ -33,6 +33,6 @@ extension PlanetaryDomainModel {
     /// - returns: A `Planetary` representing a random model.
     ///
     static func mockEmptyData() -> PlanetaryDomainModel {
-        PlanetaryMapper.toDomain(PlanetaryDataModel.mockEmptyData())
+        PlanetaryMapper.toModel(PlanetaryDataModel.mockEmptyData())
     }
 }

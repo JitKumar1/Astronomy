@@ -40,9 +40,6 @@ struct PlanetaryDetailScreen: View {
             }
             .padding()
         }
-        .onAppear {
-            detailViewModel.fetchPlanetary()
-        }
     }
     
     @ViewBuilder @MainActor

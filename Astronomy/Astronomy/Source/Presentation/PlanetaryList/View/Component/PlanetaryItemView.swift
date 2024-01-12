@@ -13,7 +13,7 @@ struct PlanetaryItemView: View {
     ///
     /// the Planetary Model
     ///
-    let planetary: PlanetaryDomainModel
+    let planetary: PlanetaryModel
     
     ///
     /// show loader while video url loading
@@ -84,7 +84,3 @@ struct PlanetaryItemView: View {
         
     }
 }
-
-//#Preview {
-//    PlanetaryItemView(planetary: <#Planetary#>)
-//}

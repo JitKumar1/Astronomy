@@ -51,7 +51,7 @@ final class PlanetaryDomainModelTests: AstronomyTestCase {
         XCTAssertEqual(theRawPlanetary.mediaURL, thePlanetary.mediaURL, "Planetary mediaURL")
         XCTAssertEqual(theRawPlanetary.mediaType, thePlanetary.mediaType, "Planetary mediaType")
         
-        let domainPlanetaryModel = PlanetaryMapper.toDomain(thePlanetary)
+        let domainPlanetaryModel = PlanetaryMapper.toModel(thePlanetary)
         
         XCTAssertEqual(theRawDomainPlanetary.title, domainPlanetaryModel.title, "Planetary Title")
         XCTAssertEqual(theRawDomainPlanetary.explanation, domainPlanetaryModel.explanation, "Planetary explanation")
@@ -121,7 +121,7 @@ final class PlanetaryDomainModelTests: AstronomyTestCase {
         XCTAssertTrue(theRawPlanetary.mediaURL.isEmpty, "Planetary mediaURL")
         XCTAssertTrue(theRawPlanetary.mediaType == .unknow, "Planetary mediaType")
         
-        let domainPlanetaryModel = PlanetaryMapper.toDomain(thePlanetary)
+        let domainPlanetaryModel = PlanetaryMapper.toModel(thePlanetary)
         
         XCTAssertEqual(theRawDomainPlanetary.title, domainPlanetaryModel.title, "Planetary Title")
         XCTAssertEqual(theRawDomainPlanetary.explanation, domainPlanetaryModel.explanation, "Planetary explanation")

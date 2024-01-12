@@ -10,9 +10,11 @@ import XCTest
 final class NavigationTests: AstronomyTestCase {
 
     func testNavigation() {
+        let theRawDomainModel = PlanetaryDomainModel.mockEmptyData()
+        let planetary = PresentationPlanetaryMapper.toModel(theRawDomainModel)
         let navigation = Navigation()
         navigation.push(.planetaryList)
-        navigation.push(.planetaryDetail(.mockEmptyData()))
+        navigation.push(.planetaryDetail(planetary))
        
         XCTAssertNotEqual(navigation.path.count, .zero, "navigation Path")
         

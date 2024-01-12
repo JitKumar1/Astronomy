@@ -10,5 +10,5 @@ import Foundation
 protocol Mappable {
     associatedtype Input
     associatedtype Output
-    static func toDomain(_ input: Input) -> Output
+    static func toModel(_ input: Input) -> Output
 }

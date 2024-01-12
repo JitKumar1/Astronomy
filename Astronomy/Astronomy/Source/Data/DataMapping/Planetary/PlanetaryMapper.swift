@@ -12,7 +12,7 @@ enum PlanetaryMapper: Mappable {
     typealias Input = PlanetaryDataModel
     typealias Output = PlanetaryDomainModel
     
-    static func toDomain(_ input: Input) -> Output {
+    static func toModel(_ input: Input) -> Output {
         PlanetaryDomainModel(title: input.title,
                              explanation: input.explanation,
                              date: input.date ~ .fullDateOnly,

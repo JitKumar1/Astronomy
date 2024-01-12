@@ -28,7 +28,7 @@ final class PlanetaryListRepository: PlanetaryListRepositoryProtocol {
     func fetchPlanetaryList() -> Promise<[PlanetaryDomainModel]> {
         return service
             .fetchPlanetaryList()
-            .map {PlanetaryListMapper.toDomain($0)}
+            .map {PlanetaryListMapper.toModel($0)}
     }
     
 }

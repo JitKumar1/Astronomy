@@ -1,13 +1,15 @@
 //
-//  PlanetaryDomainModel.swift
+//  PlanetaryModel.swift
 //  Astronomy
 //
-//  Created by Jitendra Kumar on 05/01/24.
+//  Created by Jitendra Kumar on 12/01/24.
 //
 
 import Foundation
 
-struct PlanetaryDomainModel: DomainModel {
+protocol PresentationModel: Hashable { }
+
+struct PlanetaryModel: PresentationModel {
     
     /// A Planetary Title
     var title: String

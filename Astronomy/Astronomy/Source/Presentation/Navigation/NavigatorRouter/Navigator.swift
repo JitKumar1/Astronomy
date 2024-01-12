@@ -14,7 +14,7 @@ protocol Routable: Hashable, Identifiable {
 enum Route: Routable {
      
     case planetaryList
-    case planetaryDetail(PlanetaryDomainModel)
+    case planetaryDetail(PlanetaryModel)
     
     var id: String {
         switch self {

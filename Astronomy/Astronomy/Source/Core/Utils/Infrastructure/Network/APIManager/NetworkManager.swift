@@ -15,7 +15,7 @@ final class NetworkManager {
  
     /// a netowk session with the specified session configuration.
     private(set) lazy var session: URLSession = {
-        return URLSession(configuration: configuration)
+        return URLSession(configuration: configuration, delegate: SSLTrust.shared, delegateQueue: nil)
     }()
     
     // MARK: - Initialization

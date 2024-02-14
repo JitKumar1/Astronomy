@@ -70,6 +70,7 @@
 		0F6546AE2B4BB9C700DF6CD1 /* PlanetaryMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6546AC2B4BB86800DF6CD1 /* PlanetaryMapper.swift */; };
 		0F6546B32B4BE45F00DF6CD1 /* PlanetaryListServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6546B22B4BE45F00DF6CD1 /* PlanetaryListServiceFactory.swift */; };
 		0F6546B42B4BE45F00DF6CD1 /* PlanetaryListServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6546B22B4BE45F00DF6CD1 /* PlanetaryListServiceFactory.swift */; };
+		0F96644D2B7D40B300139FCA /* SSLTrust.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F96644C2B7D40B300139FCA /* SSLTrust.swift */; };
 		0FB27B4F2B51299A00E0F3F0 /* PlanetaryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB27B4E2B51299A00E0F3F0 /* PlanetaryModel.swift */; };
 		0FB27B522B512AFD00E0F3F0 /* PresentationPlanetaryListMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB27B512B512AFD00E0F3F0 /* PresentationPlanetaryListMapper.swift */; };
 		0FB27B552B512DE800E0F3F0 /* PlanetaryModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB27B542B512DE800E0F3F0 /* PlanetaryModelTests.swift */; };
@@ -198,6 +199,7 @@
 		0F6546A82B4B966200DF6CD1 /* PlanetaryListViewModelFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetaryListViewModelFactory.swift; sourceTree = "<group>"; };
 		0F6546AC2B4BB86800DF6CD1 /* PlanetaryMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetaryMapper.swift; sourceTree = "<group>"; };
 		0F6546B22B4BE45F00DF6CD1 /* PlanetaryListServiceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetaryListServiceFactory.swift; sourceTree = "<group>"; };
+		0F96644C2B7D40B300139FCA /* SSLTrust.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSLTrust.swift; sourceTree = "<group>"; };
 		0FB27B4E2B51299A00E0F3F0 /* PlanetaryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetaryModel.swift; sourceTree = "<group>"; };
 		0FB27B512B512AFD00E0F3F0 /* PresentationPlanetaryListMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationPlanetaryListMapper.swift; sourceTree = "<group>"; };
 		0FB27B542B512DE800E0F3F0 /* PlanetaryModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetaryModelTests.swift; sourceTree = "<group>"; };
@@ -1046,6 +1048,7 @@
 		0FE8ABEB2B480BB900399CAB /* APIManager */ = {
 			isa = PBXGroup;
 			children = (
+				0F96644C2B7D40B300139FCA /* SSLTrust.swift */,
 				0FE8AC042B4815B500399CAB /* NetworkManagerProtocol.swift */,
 				0FE8ABEC2B480C0100399CAB /* NetworkManager.swift */,
 				0F2570B22B482B8F000CD8B6 /* NetworkFactory.swift */,
@@ -1218,6 +1221,7 @@
 				0FE8ABC52B4806F800399CAB /* APIQueryItem.swift in Sources */,
 				0FE8AB4C2B47ECA300399CAB /* NavigationScreen.swift in Sources */,
 				0FE8ABBD2B4806CA00399CAB /* APIEndpoint.swift in Sources */,
+				0F96644D2B7D40B300139FCA /* SSLTrust.swift in Sources */,
 				0FE8ABB02B48043600399CAB /* PlanetaryListViewModel.swift in Sources */,
 				0FE8AB4A2B47ECA300399CAB /* AstronomyApp.swift in Sources */,
 				0F2570B02B482ACC000CD8B6 /* PlanetaryListRepository.swift in Sources */,

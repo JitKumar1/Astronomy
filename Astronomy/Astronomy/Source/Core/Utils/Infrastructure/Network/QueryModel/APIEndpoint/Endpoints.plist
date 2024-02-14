@@ -4,5 +4,7 @@
 <dict>
 	<key>planetaryList</key>
 	<string>planetary/apod</string>
+	<key>dummyAppKey</key>
+	<string>5LquIng3MJwMKoodIStkbl18Ba2ZUusx4wE9P5xo</string>
 </dict>
 </plist>

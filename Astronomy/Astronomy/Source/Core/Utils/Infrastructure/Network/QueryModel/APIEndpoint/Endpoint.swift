@@ -25,7 +25,8 @@ extension Endpoint {
     }
     
     func append(parameters theParameters: APIQueryItems = []) -> APIQueryItems {
-        var parameters = APIQueryItems(arrayLiteral: APIQueryItem(name: "api_key", value: "5LquIng3MJwMKoodIStkbl18Ba2ZUusx4wE9P5xo"))
+        let dummyAppKey = Bundle.main.path(key: "dummyAppKey")
+        var parameters = APIQueryItems(arrayLiteral: APIQueryItem(name: "api_key", value: dummyAppKey))
         if theParameters.count > 0 {
             parameters.append(contentsOf: theParameters)
         }
